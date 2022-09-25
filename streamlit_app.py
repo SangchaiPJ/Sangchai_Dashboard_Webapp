@@ -36,7 +36,7 @@ def page2():
         unsafe_allow_html=True,
     )
 
-    image = Image.open('C:/Users/User/Desktop/st_babe/asset/My face.png')
+    image = Image.open('/asset/My face.png')
     
     #st.title('Hello 😊')
     st.image(image)
