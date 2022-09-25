@@ -440,7 +440,6 @@ def page3():
     st.write('')
     st.write('')
     st.write(""" ##### This small web app was developed by using Streamlit. For the dashboard page, I suggest you to set up the page as wide mode.\
-    
         You can set up the web page by clicking the triple bar button (≡) at the upper right-hand side, then click at "setting".\
         Also, you can adjust the theme of this web app. Finally, I sincerely thank you for visiting this small web app. Hope I will have\
         a chance to work with you.""")
