@@ -1,0 +1,26 @@
+#btn {
+    display: inline-block;
+    background-color: #1DC19B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    position: relative;
+    display: inline-block;
+    background-color: RoyalBlue;
+    border: none;
+    padding: 10px 10px;
+}
+
+#btn:active {
+    background-color: RoyalBlue;
+    border: none;
+    box-shadow: 3px 3px #666;
+    transform: translateY(4px);
+}
+    
