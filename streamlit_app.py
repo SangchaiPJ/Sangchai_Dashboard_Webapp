@@ -10,7 +10,7 @@ import plotly.express as px
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
 from time import sleep
-import geocoder
+
 st.set_page_config(layout="wide")   # Set the layout of web app as wide mode
 
 def local_css(file_name):
