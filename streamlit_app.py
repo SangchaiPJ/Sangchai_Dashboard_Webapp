@@ -327,7 +327,7 @@ def page3():
                 color='Black',
                 size=2,
                     line=dict(
-                        color='Black',
+                        color='#DDEE09',
                         width=4,
                     )
                 ),         
