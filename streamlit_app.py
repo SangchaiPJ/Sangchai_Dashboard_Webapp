@@ -306,7 +306,8 @@ def page3():
                 x=df_2017_2020['Sales'], 
                 y=df_2017_2020['Profit'], 
                 mode='markers',
-                name=None,))
+                name=None,
+                showlegend=False))
         fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color = df_2017_2020['Color'])
         fig2.update_xaxes(tickangle=0)
         fig2.update_layout(width=550, height=330, bargap=0.4, font_family = "sans-serif", font_size = 16,
