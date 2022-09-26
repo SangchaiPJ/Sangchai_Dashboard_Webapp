@@ -213,7 +213,7 @@ def page3():
 
     date_icon = '''                                                                                                                                                   
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <button id="btn"; class="material-symbols-outlined"; style = "font-size:22px; margin-top: 0px;">calendar_month</button>
+        <span id="btn"; class="material-symbols-outlined"; style = "font-size:22px; margin-top: 0px;">calendar_month</span>
         <div class="babe"; style = "display:inline; font-family: Source Sans Pro, sans-serif; font-weight: 600; font-size: calc(1.275rem + .3vw);">&nbsp; Select a date (2017-2020) </div>  
         '''
     st.write(date_icon, unsafe_allow_html=True) 
