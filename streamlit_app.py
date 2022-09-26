@@ -312,7 +312,7 @@ def page3():
         fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
                            margin=dict(l=10, r=10, t=10, b=10),
-                           legend=dict(yanchor="top", xanchor="left", x=0.01), showlegend=False)  
+                           legend=dict(yanchor="top", xanchor="left", x=0.01))  
         fig2.add_trace(
             go.Scatter(
                 x=df_2017_2020['Sales'],
