@@ -21,20 +21,6 @@ local_css("style.css")  # Load file "style.css"
 
 
 def page2():
-    
-    ### Set my face image
-    st.markdown(
-        """
-        <style>
-        .css-1v0mbdj {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
 
     image = Image.open('asset/My face.png') 
     
