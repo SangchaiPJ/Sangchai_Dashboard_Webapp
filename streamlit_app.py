@@ -300,8 +300,7 @@ def page3():
         mymodel = list(map(myfunc, sale_scat))    
         fig2 = make_subplots(rows=1, cols=1,
                       specs=[[{"secondary_y": True}]])
-        fig2.add_trace(
-            go.Scatter(y=df_2017_2020['Profit'], x=df_2017_2020['Sales'], mode='markers'), secondary_y=False,)
+        fig2 = px.scatter(df_2017_2020, y="Profit", x="Sales")
         fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color = df_2017_2020['Color'])
         fig2.update_xaxes(tickangle=0)
         fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
@@ -323,7 +322,7 @@ def page3():
                     width=4,
                     )
                 ),        
-            ), secondary_y=True,
+            )
         )
         st.plotly_chart(fig2, use_container_width=True)
 
