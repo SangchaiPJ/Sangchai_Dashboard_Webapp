@@ -37,7 +37,7 @@ def page2():
         Next, we import the data to MATLAB then analyze the hologram signal by calculating the numerical reconstruction by using\
         Fresnel diffraction integral. We analyze the hologram signal from row-by-row according to the number of rows of the CCD sensor\
         in vertical axis (480 rows) by taking the numerical computation of Fresnel diffraction integral, that is expressed by Fourier transform.\
-        As a result, we measure the particle depth position (a position between the CCD sensor and particle)\
+        As a results, we measure the particle depth position (a position between the CCD sensor and particle)\
         and particle diameter by image processing technique. Finally, we construct the digital 3-D particle from the\
         depth potision and its diameter measurements that is extracted from the digital hologram.\
         Also, a user can interact with the digital 3-D particle image by using hand detection system based on the blob analysis method.\
