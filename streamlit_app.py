@@ -286,7 +286,7 @@ def page3():
         sale_f = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))['Sales'].sum().reset_index()
         sale_f.sort_values(by=['Order Date'], inplace=True)
         
-        df_2017_2020["Color"] = np.where(df_2017_2020["Profit"]<0, '#4161D9', '#41D94F')   # Add color according to Profit (+/-)
+        df_2017_2020["Color"] = np.where(df_2017_2020["Profit"]<0, '#F72323', '#1ADB17')   # Add color according to Profit (+/-)
 
         sale_scat = df_2017_2020['Sales'].round(2)
         #od = pd.to_numeric(od.index, downcast='integer')
