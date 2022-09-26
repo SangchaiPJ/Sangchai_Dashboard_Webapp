@@ -320,8 +320,8 @@ def page3():
                 name="Linear Regression Forecast<br>with R-squared = 0.501",
                 hovertemplate="Profit forecast: %{y}",
                 marker=dict(color='Black'),
-                line=dict(color='firebrick', 
-                          width=4,
+                line=dict(color='Black', 
+                          width=2,
                           dash='dash'),
             ), secondary_y=False
         )        
