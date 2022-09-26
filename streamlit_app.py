@@ -285,9 +285,9 @@ def page3():
         sale_f = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))['Sales'].sum().reset_index()
         sale_f.sort_values(by=['Order Date'], inplace=True)
 
-        sale_scat = df_2017_2020['Sales']
+        sale_scat = df_2017_2020['Sales'].round(2)
         #od = pd.to_numeric(od.index, downcast='integer')
-        pro_scat = df_2017_2020['Profit']
+        pro_scat = df_2017_2020['Profit'].round(2)
 
         slope, intercept, r, p, std_err = stats.linregress(sale_scat,pro_scat)    # To extract the variables from the library
 
