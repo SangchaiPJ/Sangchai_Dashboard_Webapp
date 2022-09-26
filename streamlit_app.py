@@ -346,7 +346,7 @@ def page3():
 
         fig3 = px.bar(slsl, y = "Profit %", x = "Order Date")
         fig3.update_traces(textfont_size = 16, hovertemplate = "%{x|%Y/%m} value: %{y}%", marker_color = slsl['Color'])
-        fig3.update_xaxes(tickangle=0, range=['2017-01','2021-01'])  
+        fig3.update_xaxes(tickangle=0, range=['2016-10','2021-03'])  
         fig3.update_layout(width=550, height=350, bargap = 0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
                            margin=dict(l=10, r=10, t=10, b=10))
