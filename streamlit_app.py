@@ -124,7 +124,7 @@ def page2():
         
         movies_icon = '''                                                                                                                                                   
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />                                                                                                                     
-        <span class="material-symbols-outlined"; style = "font-size:50px; margin-left: 25px;">movie</span>        
+        <span class="material-symbols-outlined"; style = "font-size:50px; margin-left: 0px;">movie</span>        
         '''  
         st.write(movies_icon, unsafe_allow_html=True)       
         st.write("Movies")
@@ -132,7 +132,7 @@ def page2():
 
         walk_icon = '''                                                                                                                                                   
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />                                                                                                                     
-        <span class="material-symbols-outlined"; style = "font-size:50px; margin-left: 25px;">sports_martial_arts</span>        
+        <span class="material-symbols-outlined"; style = "font-size:50px; margin-left: 0px;">sports_martial_arts</span>        
         '''  
         st.write(walk_icon, unsafe_allow_html=True)       
         st.write("Exercise")
