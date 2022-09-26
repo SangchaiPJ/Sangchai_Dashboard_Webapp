@@ -261,7 +261,7 @@ def page3():
 
     #### Sales bar graph ####
     with r2_c1:
-        st.write('#### &nbsp;&nbsp;&nbsp; Total sales (2017-2020)')
+        st.write('#### &nbsp;&nbsp;&nbsp; Total Sales (2017-2020)')
 
         y2017 = df[df['Order Date'].between('2017-01-01', '2017-12-31')]
         ts_2017 = y2017['Sales'].sum().round(2)
