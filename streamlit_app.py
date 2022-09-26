@@ -319,7 +319,7 @@ def page3():
                            yaxis = dict(
                                 tickmode = 'linear',
                                 tick0 = 0,
-                                dtick = 1500,
+                                dtick = 2000,
                             )
         )
 
