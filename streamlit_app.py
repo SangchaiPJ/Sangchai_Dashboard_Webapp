@@ -285,16 +285,16 @@ def page3():
         sale_f = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))['Sales'].sum().reset_index()
         sale_f.sort_values(by=['Order Date'], inplace=True)
 
-        od = df_2017_2020['Sales']
+        sale_scat = df_2017_2020['Sales']
         #od = pd.to_numeric(od.index, downcast='integer')
-        sl = df_2017_2020['Profit']
+        pro_scat = df_2017_2020['Profit']
 
-        slope, intercept, r, p, std_err = stats.linregress(od,sl)    # To extract the variables from the library
+        slope, intercept, r, p, std_err = stats.linregress(sale_scat,pro_scat)    # To extract the variables from the library
 
-        def myfunc(od):
-            return slope * od + intercept   # y = mx + c
+        def myfunc(sale_scat):
+            return slope * sale_scat + intercept   # y = mx + c
 
-        mymodel = list(map(myfunc, od))    
+        mymodel = list(map(myfunc, sale_scat))    
 
         fig2 = px.scatter(df_2017_2020, y="Profit", x="Sales")
         fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}",)
