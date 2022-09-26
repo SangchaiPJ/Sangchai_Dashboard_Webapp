@@ -308,7 +308,7 @@ def page3():
                 mode='markers',
                 name=None,
                 showlegend=False))
-                
+
         fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color = df_2017_2020['Color'])
         fig2.update_xaxes(tickangle=0)
         fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
@@ -319,7 +319,7 @@ def page3():
                            yaxis = dict(
                                 tickmode = 'linear',
                                 tick0 = 0.5,
-                                dtick = 0.75
+                                dtick = 1000,
                             )
         )
 
