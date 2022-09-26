@@ -305,10 +305,7 @@ def page3():
             go.Scatter(
                 x=df_2017_2020['Sales'], 
                 y=df_2017_2020['Profit'], 
-                mode='markers',
-                line=dict(color='firebrick', 
-                          width=4,
-                          dash='dash')))
+                mode='markers'))
         fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color = df_2017_2020['Color'])
         fig2.update_xaxes(tickangle=0)
         fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
@@ -322,11 +319,14 @@ def page3():
                 mode="lines",
                 name="Linear Regression Forecast<br>with R-squared = 0.501",
                 hovertemplate="Profit forecast: %{y}",
-                marker=dict(
-                color='Black'
-                ),        
+                marker=dict(color='Black'),
+                line=dict(color='firebrick', 
+                          width=4,
+                          dash='dash'),
             ), secondary_y=False
-        )
+        )        
+
+
         st.plotly_chart(fig2, use_container_width=True)
 
     #### Profit % ####
