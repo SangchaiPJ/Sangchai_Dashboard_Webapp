@@ -336,11 +336,11 @@ def page3():
         st.write('#### &nbsp;&nbsp;&nbsp; Profit %')
         profit_per = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))[['Sales', 'Profit']].sum().reset_index()
 
-        profit_per['Profit %'] = ((100/(slsl['Sales'])) * slsl['Profit']).round(2)   # Calculate profit for each months in percentage
+        profit_per['Profit %'] = ((100/(profit_per['Sales'])) * profit_per['Profit']).round(2)   # Calculate profit for each months in percentage
 
-        profit_per["Color"] = np.where(slsl["Profit %"]<0, 'red', 'green')   # Find which one that profit % < 0% >>> then put 'red' in Color column, otherwise is green.
+        profit_per["Color"] = np.where(profit_per["Profit %"]<0, 'red', 'green')   # Find which one that profit % < 0% >>> then put 'red' in Color column, otherwise is green.
 
-        fig3 = px.bar(slsl, y = "Profit %", x = "Order Date")
+        fig3 = px.bar(profit_per, y = "Profit %", x = "Order Date")
         fig3.update_traces(textfont_size = 16, hovertemplate = "%{x|%Y/%m} value: %{y}%", marker_color = profit_per['Color'])
         fig3.update_xaxes(tickangle=0, range=['2016-10','2021-03'])  
         fig3.update_layout(width=550, height=350, bargap = 0.4, font_family = "sans-serif", font_size = 16,
