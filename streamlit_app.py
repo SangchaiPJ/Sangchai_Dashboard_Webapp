@@ -324,11 +324,12 @@ def page3():
                 name="Linear Regression Forecast<br>with R-squared = 0.501",
                 hovertemplate="%{x|%Y/%m} value: %{y}",
                 marker=dict(
-                color='Black',
+                color='#DDEE09',
                 size=2,
                     line=dict(
                         color='#DDEE09',
-                        width=4,
+                        width=5,
+                        dot='dash'
                     )
                 ),         
             )
