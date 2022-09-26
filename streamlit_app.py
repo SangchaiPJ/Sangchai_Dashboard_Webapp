@@ -363,7 +363,7 @@ def page3():
         
         ##### Top Selling Category #####
         fig4 = px.pie(cat_sale, labels='Category', values='Sales', names='Category')
-        fig4.update_traces(hoverinfo='label+percent', textinfo='label+percent', textfont_size=16)
+        fig4.update_traces(hoverinfo='label+percent', textinfo='label+percent', textfont_size=16, textfont_color = "White")
         fig4.update_layout(font_family="sans-serif", plot_bgcolor="#F2F2F2", legend = dict(font = dict(family = "sans-serif", size = 16)),
                   legend_title = dict(font = dict(family = "sans-serif", size = 16)))
         st.plotly_chart(fig4, use_container_width=True)
@@ -374,7 +374,7 @@ def page3():
         st.write('#### &nbsp;&nbsp;&nbsp; Top 5 Sales by Sub-Category')
         subcat_sale = df_2017_2020.groupby('Sub-Category')['Sales'].sum().round(2).nlargest(5).sort_values(ascending=False).reset_index()
         fig5 = px.pie(subcat_sale, labels='Sub-Category', values='Sales', names='Sub-Category')
-        fig5.update_traces(hoverinfo='label+percent', textinfo='label+percent', textposition='inside', textfont_size=16)
+        fig5.update_traces(hoverinfo='label+percent', textinfo='label+percent', textposition='inside', textfont_size=16, textfont_color = "White")
         fig5.update_layout(font_family="sans-serif", plot_bgcolor="#F2F2F2", legend = dict(font = dict(family = "sans-serif", size = 16)),
                   legend_title = dict(font = dict(family = "sans-serif", size = 16)))
         st.plotly_chart(fig5, use_container_width=True)
@@ -387,7 +387,7 @@ def page3():
         fig8 = px.bar(g1, x="Segment", y="Sales",
                     color='Category', barmode='group',
                     height=400, text = 'Sales')
-        fig8.update_traces(texttemplate='%{text:.2s}', textposition='inside', textfont_color = "White")
+        fig8.update_traces(texttemplate='%{text:.2s}', textposition='inside', , textfont_size=16, textfont_color = "White")
         fig8.update_layout(margin=dict(l=10, r=10, t=10, b=10), legend=dict(yanchor="top", xanchor="right", x=1),
                            font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
         fig8.show()
