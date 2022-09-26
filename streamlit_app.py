@@ -297,7 +297,7 @@ def page3():
         mymodel = list(map(myfunc, od))    
 
         fig2 = px.scatter(df_2017_2020, y="Profit", x="Sales")
-        fig2.update_traces(textfont_size=16, hovertemplate="%{x|%Y/%m} value: %{y}",)
+        fig2.update_traces(textfont_size=16, hovertemplate="value: %{y}",)
         fig2.update_xaxes(tickangle=0)
         fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
