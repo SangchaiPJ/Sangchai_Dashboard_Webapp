@@ -177,7 +177,7 @@ def page2():
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />                                                                                                                    
         <span class="material-symbols-outlined"; style = "position: absolute; font-size:32px; margin-left: 5px;">location_on</span>   
         <p style = "margin-left: 40px;">&nbsp;&nbsp;717 (Always Place 1) Village No.5\
-        Suranaree Sub-district, Muaeng District,\
+        Suranaree Sub-district, Mueang District,\
         <br>&nbsp;&nbsp;Nakhon Ratchasima, 30000</p>     
         '''
     st.write(location_icon, unsafe_allow_html=True)
