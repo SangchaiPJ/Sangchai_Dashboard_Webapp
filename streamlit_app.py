@@ -57,7 +57,7 @@ def page2():
     st.write("""●&nbsp;Master of Engineering (Electrical Engineering),\
               Suranaree University of Technology, Nakhon Ratchasima, Thailand""")   ### Use\n in front of text to make new line
     st.write("#### 2014 - 2018")
-    st.write("""●Bachelor of Engineering (Electronic Engineering),\
+    st.write("""● Bachelor of Engineering (Electronic Engineering),\
               Suranaree University of Technology, Nakhon Ratchasima, Thailand""") 
     
     ### TECHNICAL SKILLS ###
