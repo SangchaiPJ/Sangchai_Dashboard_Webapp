@@ -329,7 +329,7 @@ def page3():
                     line=dict(
                         color='#DDEE09',
                         width=5,
-                        dash='dot'
+                        dash='dash'
                     )
                 ),         
             )
