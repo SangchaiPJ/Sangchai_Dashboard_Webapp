@@ -324,7 +324,7 @@ def page3():
                 hovertemplate="Profit forecast: %{y}",
                 marker=dict(color='Black'),
                 line=dict(color='#C459F3', 
-                          width=2,
+                          width=4,
                           dash='dot'),
             ), secondary_y=False
         )        
