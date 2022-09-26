@@ -388,7 +388,7 @@ def page3():
                     color='Category', barmode='group',
                     height=400, text = 'Sales')
         fig8.update_traces(texttemplate='%{text:.2s}', textposition='inside', textfont_color = "White")
-        fig8.update_layout(margin=dict(l=10, r=10, t=10, b=10), font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
+        fig8.update_layout(width=1000, height=800, margin=dict(l=10, r=10, t=10, b=10), font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
         fig8.show()
         st.plotly_chart(fig8, use_container_width=True)
 
