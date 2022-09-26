@@ -399,7 +399,7 @@ def page3():
     
     #### Top 10 by Sales ####
     with r4_c1:
-        st.write('#### &nbsp;&nbsp;&nbsp; Top 10 State by Sales')
+        st.write('#### &nbsp;&nbsp;&nbsp; Top 10 Sales by State')
         fig6 = px.bar(t10_state, x='Sales', y='State', text= 'Sales', orientation='h', color='State')
         fig6.update_traces(texttemplate='%{text:.2s}', textposition='inside', textfont_color = "White") 
         fig6.update_layout(margin=dict(l=10, r=10, t=10, b=10), font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
