@@ -458,8 +458,8 @@ def page3():
         visiting this small web app. Hope I will have a chance to work with you.""")
 
 page_names_to_funcs = {
-    "Introduction": page2,
-    "Dashboard": page3,
+    "My resume": page2,
+    "Sales Dashboard": page3,
 }
 
 selected_page = st.sidebar.selectbox("Choose an option", page_names_to_funcs.keys())
