@@ -386,8 +386,8 @@ def page3():
 
         fig8 = px.bar(g1, x="Segment", y="Sales",
                     color='Category', barmode='group',
-                    height=400, text = 'Sales', orientation = "h")
-        fig8.update_traces(texttemplate='%{text:.2s}', textposition='inside', textfont_size=16, textfont_color = "White")
+                    height=400, text = 'Sales')
+        fig8.update_traces(texttemplate='%{text:.2s}', textposition='inside', textangle=0, textfont_size=16, textfont_color = "White")
         fig8.update_layout(margin=dict(l=10, r=10, t=10, b=10), bargap=0.15, legend=dict(yanchor="top", xanchor="right", x=1),
                            font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
         fig8.show()
