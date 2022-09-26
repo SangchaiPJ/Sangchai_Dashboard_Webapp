@@ -1,3 +1,4 @@
+from os import write
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -81,7 +82,8 @@ def page2():
         \n● Digital signal processing")
 
     with col4:
-        
+        st.write('')
+
     ### SOFT SKILLS ###
     st.title('SOFT SKILLS')
     col11, col22 = st.columns(2)
