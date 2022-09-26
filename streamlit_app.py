@@ -318,7 +318,7 @@ def page3():
                 marker=dict(
                 color='Black'
                 ),        
-            ), secondary_y=True
+            ), secondary_y=False
         )
         st.plotly_chart(fig2, use_container_width=True)
 
