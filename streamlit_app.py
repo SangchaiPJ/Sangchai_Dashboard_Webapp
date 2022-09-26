@@ -318,7 +318,7 @@ def page3():
                            xaxis_title="Sales", yaxis_title="Profit",
                            yaxis = dict(
                                 tickmode = 'linear',
-                                tick0 = 0.5,
+                                tick0 = 500,
                                 dtick = 1000,
                             )
         )
