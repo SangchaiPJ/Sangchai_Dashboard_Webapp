@@ -334,14 +334,14 @@ def page3():
     #### Profit % ####
     with r2_c3:
         st.write('#### &nbsp;&nbsp;&nbsp; Profit %')
-        slsl = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))[['Sales', 'Profit']].sum().reset_index()
+        profit_per = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))[['Sales', 'Profit']].sum().reset_index()
 
-        slsl['Profit %'] = ((100/(slsl['Sales'])) * slsl['Profit']).round(2)   # Calculate profit for each months in percentage
+        profit_per['Profit %'] = ((100/(slsl['Sales'])) * slsl['Profit']).round(2)   # Calculate profit for each months in percentage
 
-        slsl["Color"] = np.where(slsl["Profit %"]<0, 'red', 'green')   # Find which one that profit % < 0% >>> then put 'red' in Color column, otherwise is green.
+        profit_per["Color"] = np.where(slsl["Profit %"]<0, 'red', 'green')   # Find which one that profit % < 0% >>> then put 'red' in Color column, otherwise is green.
 
         fig3 = px.bar(slsl, y = "Profit %", x = "Order Date")
-        fig3.update_traces(textfont_size = 16, hovertemplate = "%{x|%Y/%m} value: %{y}%", marker_color = slsl['Color'])
+        fig3.update_traces(textfont_size = 16, hovertemplate = "%{x|%Y/%m} value: %{y}%", marker_color = profit_per['Color'])
         fig3.update_xaxes(tickangle=0, range=['2016-10','2021-03'])  
         fig3.update_layout(width=550, height=350, bargap = 0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
