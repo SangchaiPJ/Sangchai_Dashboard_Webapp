@@ -80,6 +80,8 @@ def page2():
         \n● Image processing\
         \n● Digital signal processing")
 
+    with col4:
+        
     ### SOFT SKILLS ###
     st.title('SOFT SKILLS')
     col11, col22 = st.columns(2)
