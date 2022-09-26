@@ -285,13 +285,13 @@ def page3():
         sale_f = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))['Sales'].sum().reset_index()
         sale_f.sort_values(by=['Order Date'], inplace=True)
 
-        od = sale_f['Order Date']
-        od = pd.to_numeric(od.index, downcast='integer')
-        sl = sale_f['Sales']
+        od = df_2017_2020['Sales']
+        #od = pd.to_numeric(od.index, downcast='integer')
+        sl = df_2017_2020['Profit']
 
         slope, intercept, r, p, std_err = stats.linregress(od,sl)    # To extract the variables from the library
 
-        def myfunc(df_2017_2020['Sales']):
+        def myfunc(od):
             return slope * od + intercept   # y = mx + c
 
         mymodel = list(map(myfunc, od))    
