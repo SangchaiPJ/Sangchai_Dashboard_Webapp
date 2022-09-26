@@ -353,7 +353,7 @@ def page3():
         st.plotly_chart(fig3, use_container_width=True)
 
     ########### Row 3 ###########
-    r3_c1, r3_c2 = st.columns(2)
+    r3_c1, r3_c2, r3_c3 = st.columns(3)
 
     #### Sales by Cat ####
     with r3_c1:
@@ -379,6 +379,18 @@ def page3():
                   legend_title = dict(font = dict(family = "sans-serif", size = 16)))
         st.plotly_chart(fig5, use_container_width=True)
 
+    #### Sales by Segment and Sub-Cat ####
+    with r3_c3:
+        g1 = df.groupby(['Segment', 'Category'])['Sales'].sum().round(2).sort_values(ascending=False).reset_index()
+
+        fig8 = px.bar(g1, x="Segment", y="Sales",
+                    color='Category', barmode='group',
+                    height=400, text = 'Sales')
+        fig8.update_traces(texttemplate='%{text:.2s}', textposition='inside', textfont_color = "White")
+        fig8.update_layout(width=720, height=350, margin=dict(l=10, r=10, t=10, b=10), font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
+        fig8.show()
+        st.plotly_chart(fig8, use_container_width=True)
+
     ########### Row 4 ###########
     r4_c1, r4_c2 = st.columns(2)
     t10_state = df_2017_2020.groupby('State')['Sales'].sum().round(2).nlargest(10).sort_values(ascending=False).reset_index()
@@ -388,7 +400,7 @@ def page3():
         st.write('#### &nbsp;&nbsp;&nbsp; Top 10 State by Sales')
         fig6 = px.bar(t10_state, x='Sales', y='State', text= 'Sales', orientation='h')
         fig6.update_traces(texttemplate='%{text:.2s}', textposition='inside', marker_color='#FB83E5') 
-        fig6.update_layout(margin=dict(l=10, r=10, t=5, b=10), font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
+        fig6.update_layout(margin=dict(l=10, r=10, t=10, b=10), font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
         fig6.update_yaxes(categoryorder="total ascending")
         st.plotly_chart(fig6, use_container_width=True)
 
