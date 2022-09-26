@@ -350,7 +350,7 @@ def page3():
                                 yanchor="bottom",
                                 y=1.02,
                                 xanchor="right",
-                                x=1)
+                                x=1))
         st.plotly_chart(fig3, use_container_width=True)
 
     ########### Row 3 ###########
