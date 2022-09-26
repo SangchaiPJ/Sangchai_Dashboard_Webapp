@@ -282,7 +282,7 @@ def page3():
     
     #### Sales Forecast ####
     with r2_c2:
-        st.write('#### &nbsp;&nbsp;&nbsp; Sales Forecast')
+        st.write('#### &nbsp;&nbsp;&nbsp; Sales-Profit Forecast')
         sale_f = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))['Sales'].sum().reset_index()
         sale_f.sort_values(by=['Order Date'], inplace=True)
         
