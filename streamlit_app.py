@@ -298,8 +298,7 @@ def page3():
             return slope * sale_scat + intercept   # y = mx + c
 
         mymodel = list(map(myfunc, sale_scat))    
-        fig2 = make_subplots(specs=[[{"secondary_y": True}, {"secondary_y": False}],
-                           [{"secondary_y": True}, {"secondary_y": True}]])
+        fig2 = make_subplots(specs=[[{"secondary_y": True}, {"secondary_y": False}])
         fig2 = px.scatter(df_2017_2020, y="Profit", x="Sales")
         fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color = df_2017_2020['Color'])
         fig2.update_xaxes(tickangle=0)
