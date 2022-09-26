@@ -382,7 +382,7 @@ def page3():
     #### Sales by Segment and Sub-Cat ####
     with r3_c3:
         st.write('#### &nbsp;&nbsp;&nbsp; Sales by Segment and Category')
-        g1 = df.groupby(['Segment', 'Category'])['Sales'].sum().round(2).sort_values(ascending=False).reset_index()
+        g1 = df_2017_2020.groupby(['Segment', 'Category'])['Sales'].sum().round(2).sort_values(ascending=False).reset_index()
 
         fig8 = px.bar(g1, x="Segment", y="Sales",
                     color='Category', barmode='group',
