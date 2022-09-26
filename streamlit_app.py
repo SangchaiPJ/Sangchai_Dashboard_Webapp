@@ -100,7 +100,7 @@ def page2():
 
     ### HOBBIES ###
     st.title('HOBBIES')
-    col111, col222, col333 = st.columns(3)
+    col111, col222, col333, col444 = st.columns(4)
     
     with col111:
         
