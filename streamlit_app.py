@@ -299,7 +299,7 @@ def page3():
 
         mymodel = list(map(myfunc, sale_scat))    
         fig2 = make_subplots(rows=1, cols=1,
-                      specs=[[{"secondary_y": True}]])
+                      specs=[[{"secondary_y": False}]])
         fig2 = px.scatter(df_2017_2020, y="Profit", x="Sales")
         # fig2.add_trace(go.Scatter(x=df_2017_2020['Sales'], y=df_2017_2020['Profit'], mode='markers'), secondary_y=True)
         fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color = df_2017_2020['Color'])
