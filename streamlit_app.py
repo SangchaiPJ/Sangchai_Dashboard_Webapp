@@ -323,8 +323,7 @@ def page3():
                     width=4,
                     )
                 ),        
-            )
-            secondary_y=True,
+            ), secondary_y=True,
         )
         st.plotly_chart(fig2, use_container_width=True)
 
