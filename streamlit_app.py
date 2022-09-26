@@ -320,7 +320,7 @@ def page3():
                 size=2,
                 line=dict(
                     color='#CF325B',
-                    width=10,
+                    width=20,
                     )
                 ),        
             ), secondary_y=False
