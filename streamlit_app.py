@@ -401,7 +401,7 @@ def page3():
     with r4_c1:
         st.write('#### &nbsp;&nbsp;&nbsp; Top 10 State by Sales')
         fig6 = px.bar(t10_state, x='Sales', y='State', text= 'Sales', orientation='h')
-        fig6.update_traces(texttemplate='%{text:.2s}', textposition='inside', textfont_color = "White", marker_color=t10_state['State']) 
+        fig6.update_traces(texttemplate='%{text:.2s}', textposition='inside', textfont_color = "White") 
         fig6.update_layout(margin=dict(l=10, r=10, t=10, b=10), font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
         fig6.update_yaxes(categoryorder="total ascending")
         st.plotly_chart(fig6, use_container_width=True)
