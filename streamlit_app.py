@@ -284,6 +284,8 @@ def page3():
         st.write('#### &nbsp;&nbsp;&nbsp; Sales Forecast')
         sale_f = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))['Sales'].sum().reset_index()
         sale_f.sort_values(by=['Order Date'], inplace=True)
+        
+        df_2017_2020["Color"] = np.where(df_2017_2020["Profit"]<0, 'red', 'green')
 
         sale_scat = df_2017_2020['Sales'].round(2)
         #od = pd.to_numeric(od.index, downcast='integer')
@@ -297,7 +299,7 @@ def page3():
         mymodel = list(map(myfunc, sale_scat))    
 
         fig2 = px.scatter(df_2017_2020, y="Profit", x="Sales")
-        fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color='#F52424')
+        fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color = df_2017_2020['Color'])
         fig2.update_xaxes(tickangle=0)
         fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
