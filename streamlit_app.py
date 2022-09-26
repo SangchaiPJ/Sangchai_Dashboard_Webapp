@@ -310,7 +310,7 @@ def page3():
                 showlegend=False))
         fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color = df_2017_2020['Color'])
         fig2.update_xaxes(tickangle=0)
-        fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
+        fig2.update_layout(width=550, height=300, bargap=0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
                            margin=dict(l=10, r=10, t=10, b=10),
                            legend=dict(yanchor="top", xanchor="left", x=0.01))  
