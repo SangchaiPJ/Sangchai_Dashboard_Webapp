@@ -286,7 +286,7 @@ def page3():
         sale_f = df_2017_2020.groupby(df_2017_2020['Order Date'].dt.strftime('%Y-%m'))['Sales'].sum().reset_index()
         sale_f.sort_values(by=['Order Date'], inplace=True)
         
-        df_2017_2020["Color"] = np.where(df_2017_2020["Profit"]<0, '#F72323', '#1ADB17')   # Add color according to Profit (+/-)
+        df_2017_2020["Color"] = np.where(df_2017_2020["Profit"]<0, 'red', 'green')   # Add color according to Profit (+/-)
 
         sale_scat = df_2017_2020['Sales'].round(2)
         #od = pd.to_numeric(od.index, downcast='integer')
@@ -338,7 +338,7 @@ def page3():
 
         profit_per['Profit %'] = ((100/(profit_per['Sales'])) * profit_per['Profit']).round(2)   # Calculate profit for each months in percentage
 
-        profit_per["Color"] = np.where(profit_per["Profit %"]<0, '#F72323', '#1ADB17')   # Find which one that profit % < 0% >>> then put 'red' in Color column, otherwise is green.
+        profit_per["Color"] = np.where(profit_per["Profit %"]<0, 'red', 'green')   # Find which one that profit % < 0% >>> then put 'red' in Color column, otherwise is green.
 
         fig3 = px.bar(profit_per, y = "Profit %", x = "Order Date")
         fig3.update_traces(textfont_size = 16, hovertemplate = "%{x|%Y/%m} value: %{y}%", marker_color = profit_per['Color'])
