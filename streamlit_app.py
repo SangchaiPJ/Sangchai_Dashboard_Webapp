@@ -344,13 +344,7 @@ def page3():
         fig3.update_xaxes(tickangle=0, range=['2016-10','2021-03'])  
         fig3.update_layout(width=550, height=350, bargap = 0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
-                           margin=dict(l=10, r=10, t=10, b=10),
-                           legend=dict(
-                                orientation="h",
-                                yanchor="bottom",
-                                y=1.02,
-                                xanchor="right",
-                                x=1))
+                           margin=dict(l=10, r=10, t=10, b=10),)
         st.plotly_chart(fig3, use_container_width=True)
 
     ########### Row 3 ###########
@@ -390,7 +384,13 @@ def page3():
                     height=400, text = 'Sales')
         fig8.update_traces(texttemplate='%{text:.2s}', textposition='inside', textangle=0, textfont_size=16, textfont_color = "White")
         fig8.update_layout(margin=dict(l=10, r=10, t=10, b=10), bargap=0.15, legend=dict(yanchor="top", xanchor="right", x=1),
-                           font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2")     
+                           font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2",
+                           legend=dict(
+                                orientation="h",
+                                yanchor="bottom",
+                                y=1.02,
+                                xanchor="right",
+                                x=1))     
         fig8.show()
         st.plotly_chart(fig8, use_container_width=True)
 
