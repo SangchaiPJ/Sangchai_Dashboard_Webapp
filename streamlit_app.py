@@ -349,8 +349,10 @@ def page3():
         fig3.update_xaxes(tickangle = 0)  
         fig3.update_layout(width=550, height=350, bargap = 0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
-                           margin=dict(l=10, r=10, t=10, b=10)
-                           xaxis_tickformatstops = [dict(dtickrange=[Jan 2017, Jan 2021],))
+                           margin=dict(l=10, r=10, t=10, b=10),
+                           xaxis_tickformatstops = [
+                             dict(dtickrange=['Jan 2017', 'Jan 2021'], value="%H:%M:%S.%L ms"),])
+
         st.plotly_chart(fig3, use_container_width=True)
 
     ########### Row 3 ###########
