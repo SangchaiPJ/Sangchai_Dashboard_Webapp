@@ -325,10 +325,10 @@ def page3():
                 hovertemplate="%{x|%Y/%m} value: %{y}",
                 marker=dict(
                 color='#CF325B',
-                size=0,
+                size=2,
                 line=dict(
                     color='#CF325B',
-                    width=5,
+                    width=4,
                     )
                 ),         
             )
