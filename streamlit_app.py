@@ -127,7 +127,7 @@ def page2():
         <span class="material-symbols-outlined"; style = "font-size:50px; margin-left: 25px;">movie</span>        
         '''  
         st.write(movies_icon, unsafe_allow_html=True)       
-        st.write("&nbsp; &nbsp; &nbsp; &nbsp; Movies")
+        st.write("Movies")
         st.write('')   
 
         walk_icon = '''                                                                                                                                                   
@@ -135,7 +135,7 @@ def page2():
         <span class="material-symbols-outlined"; style = "font-size:50px; margin-left: 25px;">sports_martial_arts</span>        
         '''  
         st.write(walk_icon, unsafe_allow_html=True)       
-        st.write("&nbsp; &nbsp; &nbsp; &nbsp; Exercise")
+        st.write("Exercise")
         st.write('')   
 
     with col333:
