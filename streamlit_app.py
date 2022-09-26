@@ -344,7 +344,13 @@ def page3():
         fig3.update_xaxes(tickangle=0, range=['2016-10','2021-03'])  
         fig3.update_layout(width=550, height=350, bargap = 0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
-                           margin=dict(l=10, r=10, t=10, b=10))
+                           margin=dict(l=10, r=10, t=10, b=10),
+                           legend=dict(
+                                orientation="h",
+                                yanchor="bottom",
+                                y=1.02,
+                                xanchor="right",
+                                x=1)
         st.plotly_chart(fig3, use_container_width=True)
 
     ########### Row 3 ###########
