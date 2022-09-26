@@ -309,7 +309,7 @@ def page3():
             go.Scatter(
                 x=df_2017_2020['Sales'],
                 y=mymodel,
-                mode="markers+lines",
+                mode="lines",
                 name="Linear Regression Forecast<br>with R-squared = 0.501",
                 hovertemplate="Profit forecast: %{y}",
                 marker=dict(
