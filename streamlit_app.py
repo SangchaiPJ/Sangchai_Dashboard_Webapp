@@ -291,12 +291,12 @@ def page3():
 
         slope, intercept, r, p, std_err = stats.linregress(od,sl)    # To extract the variables from the library
 
-        def myfunc(od):
+        def myfunc(df_2017_2020['Sales']):
             return slope * od + intercept   # y = mx + c
 
         mymodel = list(map(myfunc, od))    
 
-        fig2 = px.bar(sale_f, y="Sales", x="Order Date")
+        fig2 = px.scatter(df_2017_2020, y="Profit", x="Sales")
         fig2.update_traces(textfont_size=16, hovertemplate="%{x|%Y/%m} value: %{y}",)
         fig2.update_xaxes(tickangle=0)
         fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
@@ -305,7 +305,7 @@ def page3():
                            legend=dict(yanchor="top", xanchor="left", x=0.01))  
         fig2.add_trace(
             go.Scatter(
-                x=sale_f['Order Date'],
+                x=df_2017_2020['Sales'],
                 y=mymodel,
                 mode="markers+lines",
                 name="Linear Regression Forecast<br>with R-squared = 0.501",
