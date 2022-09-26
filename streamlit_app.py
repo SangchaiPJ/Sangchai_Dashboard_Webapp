@@ -311,7 +311,7 @@ def page3():
 
         fig2 = px.bar(sale_f, y="Sales", x="Order Date")
         fig2.update_traces(textfont_size=16, hovertemplate="%{x|%Y/%m} value: %{y}",)
-        fig2.update_xaxes(tickangle=-45)
+        fig2.update_xaxes(tickangle=0)
         fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
                            margin=dict(l=10, r=10, t=10, b=10),
