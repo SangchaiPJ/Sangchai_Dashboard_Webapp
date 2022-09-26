@@ -314,7 +314,7 @@ def page3():
                            plot_bgcolor = "#F2F2F2", barmode = 'stack',
                            margin=dict(l=10, r=10, t=10, b=10),
                            legend=dict(yanchor="top", xanchor="left", x=0.01),
-                           xlabel = "Sales", ylabel = "Profit")  
+                           xaxis_title="Sales", yaxis_title="Profit",)  
         fig2.add_trace(
             go.Scatter(
                 x=df_2017_2020['Sales'],
