@@ -415,7 +415,7 @@ def page3():
                 countrywidth = 2,
                 subunitwidth = 2,
                 ),
-            width=550, height=450, margin = dict(l=10, r=10, t=10, b=10), font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2"
+            width=550, height=600, margin = dict(l=10, r=10, t=10, b=10), font_family="sans-serif", font_size=16, plot_bgcolor="#F2F2F2"
             )
         
         st.plotly_chart(fig7, use_container_width=True)
