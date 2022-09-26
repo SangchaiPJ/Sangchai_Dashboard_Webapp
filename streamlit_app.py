@@ -10,6 +10,7 @@ import datetime
 import plotly.express as px
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 from time import sleep
 
 st.set_page_config(layout="wide")   # Set the layout of web app as wide mode
