@@ -193,7 +193,7 @@ def page3():
     df['Order Date']= pd.to_datetime(df['Order Date']) 
     dashboard_icon = '''                                                                                                                                                   
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <span class="material-symbols-outlined"; style = "position: absolute; font-size:50px; margin-top: 20px;">dashboard</span>
+        <span class="material-symbols-outlined"; style = "position: absolute; font-size:50px; margin-top: 19px;">dashboard</span>
         <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sales dashboard</h1>  
         '''
     st.write(dashboard_icon, unsafe_allow_html=True) 
