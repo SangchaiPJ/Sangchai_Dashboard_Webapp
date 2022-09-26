@@ -338,7 +338,7 @@ def page3():
 
         profit_per['Profit %'] = ((100/(profit_per['Sales'])) * profit_per['Profit']).round(2)   # Calculate profit for each months in percentage
 
-        profit_per["Color"] = np.where(profit_per["Profit %"]<0, 'red', 'green')   # Find which one that profit % < 0% >>> then put 'red' in Color column, otherwise is green.
+        profit_per["Color"] = np.where(profit_per["Profit %"]<0, '#F72323', '#1ADB17')   # Find which one that profit % < 0% >>> then put 'red' in Color column, otherwise is green.
 
         fig3 = px.bar(profit_per, y = "Profit %", x = "Order Date")
         fig3.update_traces(textfont_size = 16, hovertemplate = "%{x|%Y/%m} value: %{y}%", marker_color = profit_per['Color'])
