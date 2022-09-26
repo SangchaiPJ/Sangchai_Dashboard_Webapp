@@ -319,8 +319,7 @@ def page3():
                     color='#CF325B',
                     width=4,
                     )
-                ),
-                secondary_y=True,         
+                ),        
             )
         )
         st.plotly_chart(fig2, use_container_width=True)
