@@ -10,7 +10,6 @@ import datetime
 import plotly.express as px
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 from time import sleep
 
 st.set_page_config(layout="wide")   # Set the layout of web app as wide mode
@@ -298,9 +297,8 @@ def page3():
             return slope * sale_scat + intercept   # y = mx + c
 
         mymodel = list(map(myfunc, sale_scat))    
-        fig2 = make_subplots(specs=[{"secondary_y": True}, {"secondary_y": False}])
-        fig2.add_trace(
-            go.Scatter(df_2017_2020, y="Profit", x="Sales"),secondary_y = True)
+
+        fig2 = px.scatter(df_2017_2020, y="Profit", x="Sales")
         fig2.update_traces(textfont_size=16, hovertemplate="Sale: %{x}\n Profit: %{y}", marker_color = df_2017_2020['Color'])
         fig2.update_xaxes(tickangle=0)
         fig2.update_layout(width=550, height=350, bargap=0.4, font_family = "sans-serif", font_size = 16,
@@ -321,8 +319,7 @@ def page3():
                     color='#CF325B',
                     width=4,
                     )
-                ),
-                secondary_y = False        
+                ),        
             )
         )
         st.plotly_chart(fig2, use_container_width=True)
