@@ -62,7 +62,7 @@ def page2():
     
     ### TECHNICAL SKILLS ###
     st.title('TECHNICAL SKILLS')
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write("● MATLAB\
@@ -80,9 +80,6 @@ def page2():
         st.write("● JavaScipt (basic)\
         \n● Image processing\
         \n● Digital signal processing")
-
-    with col4:
-        st.write('')
 
     ### SOFT SKILLS ###
     st.title('SOFT SKILLS')
