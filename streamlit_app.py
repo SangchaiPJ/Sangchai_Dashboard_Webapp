@@ -32,7 +32,7 @@ def page2():
     st.write("""I\'m Sangchai Paijit. You can call me Babe. I\'m 26 years old.\
         I graduated with a bachelor's degree in electronic engineering from Suranaree University of Technology.\
         Also, I just have graduated with a master's degree in electrical engineering from Suranaree University of Technology.\
-        I have an experiences with the digital holography (DH) during a master\'s degree studeis.\
+        I have an experiences with the digital holography (DH) during a master\'s degree studies.\
         For a brief explanation, we store the hologram signal of the particle by using the CCD sensor with the resolution of 640×480 pixel.
         Next, we import the data to MATLAB then analyze the hologram signal by calculating the numerical reconstruction by using\
         Fresnel diffraction integral. We analyze the hologram signal from row-by-row according to the number of rows of the CCD sensor\
