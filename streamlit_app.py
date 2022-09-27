@@ -78,7 +78,7 @@ def page2():
         \n● CSS")
 
     with col3:
-        st.write("● JavaScipt (basic)\
+        st.write("● JavaScript (basic)\
         \n● Image processing\
         \n● Digital signal processing")
 
