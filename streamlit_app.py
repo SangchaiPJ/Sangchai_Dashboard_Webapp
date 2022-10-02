@@ -192,7 +192,7 @@ def page2():
         <i class='bx bxl-linkedin'; style = "position: absolute; font-size:32px; margin-top: -5px; margin-left: 5px;"></i>  
         <a href="www.linkedin.com/in/sangchai-paijit"; style = "margin-left: 40px; margin-top: 2px;">www.linkedin.com/in/sangchai-paijit</a>
         '''
-    st.components.v1.iframe(linkedin_icon, unsafe_allow_html=True)
+    st.write(linkedin_icon, unsafe_allow_html=True)
 
 def page3():
 
