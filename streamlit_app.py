@@ -188,7 +188,7 @@ def page2():
 
     # Linkedin
     linkedin_icon = '''                                                                                                                                                   
-        <i class='bx bxl-linkedin-square'></i>                                                                                                                  
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOdJREFUSEvllWENwjAQhb8pAAk4AAeAA1AAEnCCBXAACgAHSEACKIC85Eqabg0s1y0h3K82ub5vd++6VnQcVcf69A44A1NnVdKYB420gqdTvKabAzyAg2UvgEFL8Fs3B9gDaxPdAaufA9yTFg1LVyAPriY6MQ8uth8BAsqjGyCPxskHfPRAYjM7FEY3HJI3EleVITbANtq7ALluCRimzQVQe06AWreMvIovqQug1gmgOJoHWncCaPJKsGIV/DFAIxdfNE2OTFRorQlSNOV95UHLP0MtPWtyiQcnNr7/J9Pbmnyviiub4As/E0wZX0UvUwAAAABJRU5ErkJggg=="/>                                                                                                            
         <span class="material-symbols-outlined"; style = "position: absolute; font-size:32px; margin-left: 5px;">call</span>        
         <p style = "margin-left: 40px">&nbsp;&nbsp;www.linkedin.com/in/sangchai-paijit</p> 
         '''
