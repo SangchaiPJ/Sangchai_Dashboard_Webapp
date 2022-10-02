@@ -190,7 +190,7 @@ def page2():
     linkedin_icon = '''                                                                                                                                                   
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <i class='bx bxl-linkedin'; style = "position: absolute; font-size:32px; margin-left: 5px;"></i>  
-        <p style = "margin-left: 40px;">&nbsp;&nbsp;www.linkedin.com/in/sangchai-paijit</p> 
+        <p style = "margin-left: 40px; position: absolute;">&nbsp;&nbsp;www.linkedin.com/in/sangchai-paijit</p> 
         '''
     st.write(linkedin_icon, unsafe_allow_html=True)
 
