@@ -338,7 +338,6 @@ def page3():
         )        
 
         st.plotly_chart(fig2, use_container_width=True)
-        st.write(r)
 
     #### Profit % ####
     with r2_c3:
