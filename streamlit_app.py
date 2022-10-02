@@ -303,7 +303,7 @@ def page3():
         # fig2 = px.scatter(df_2017_2020, y="Profit", x="Sales")
         fig2.add_trace(
             go.Scatter(
-                x=df_2017_2020['Sales'], 
+                x=df_2017_2020['Order Date'], 
                 y=df_2017_2020['Profit'], 
                 mode='markers',
                 name=None,
