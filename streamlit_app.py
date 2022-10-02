@@ -188,8 +188,7 @@ def page2():
 
     # Linkedin
     linkedin_icon = '''                                                                                                                                                   
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOdJREFUSEvllWENwjAQhb8pAAk4AAeAA1AAEnCCBXAACgAHSEACKIC85Eqabg0s1y0h3K82ub5vd++6VnQcVcf69A44A1NnVdKYB420gqdTvKabAzyAg2UvgEFL8Fs3B9gDaxPdAaufA9yTFg1LVyAPriY6MQ8uth8BAsqjGyCPxskHfPRAYjM7FEY3HJI3EleVITbANtq7ALluCRimzQVQe06AWreMvIovqQug1gmgOJoHWncCaPJKsGIV/DFAIxdfNE2OTFRorQlSNOV95UHLP0MtPWtyiQcnNr7/J9Pbmnyviiub4As/E0wZX0UvUwAAAABJRU5ErkJggg=="/>                                                                                                            
-        <span class="material-symbols-outlined"; style = "position: absolute; font-size:32px; margin-left: 5px;">call</span>        
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO1JREFUSEvtldERwUAQhr9UgBJUgArQgRJ0QAl0QAVKMDqgAzrQASpgfrNnLjeZRC5uvOSeLpvd/9vd20syEq8ssT5FgK5B77+Ah4ANsDDhNbBqCvEByvzmCaqCXkqAtAVo1KqyFm2B5S8rcFpJD3kCPI30AM62HwKdwK5EBoBi5HcBrmHFYYucuPxOFqz9ERhbsOyarj3gqnW6smv6PisGoCwlHIo70akl9H6OAVSd+wGYOadYgC8yB3YeVRX2mwJG3gBIS3fFDUGuM7EVhHH+ELSAwulrW5T7VBRd0K9bVHVLa7//y0+/dpZlAS8ZgkgZgf59vgAAAABJRU5ErkJggg=="/>       
         <p style = "margin-left: 40px">&nbsp;&nbsp;www.linkedin.com/in/sangchai-paijit</p> 
         '''
     st.write(linkedin_icon, unsafe_allow_html=True)
