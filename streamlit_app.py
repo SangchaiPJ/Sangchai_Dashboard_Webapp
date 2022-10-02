@@ -186,6 +186,14 @@ def page2():
         '''
     st.write(tel_icon, unsafe_allow_html=True)
 
+    # Linkedin
+    linkedin_icon = '''                                                                                                                                                   
+        <i class='bx bxl-linkedin-square'></i>                                                                                                                  
+        <span class="material-symbols-outlined"; style = "position: absolute; font-size:32px; margin-left: 5px;">call</span>        
+        <p style = "margin-left: 40px">&nbsp;&nbsp;www.linkedin.com/in/sangchai-paijit</p> 
+        '''
+    st.write(linkedin_icon, unsafe_allow_html=True)
+
 def page3():
 
     df = pd.read_csv("sample-store.csv")   # Import the data file
