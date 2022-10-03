@@ -194,6 +194,189 @@ def page1():
         '''
     st.write(linkedin_icon, unsafe_allow_html=True)
 
+
+def page2():
+
+    ### Row 1: Experimental setup, digital hologram, and numerical reconstruction signal ###
+    st.title('MY THESIS')
+    st.write('#### INTERACTIVE 3-D DIGITAL DISPLAY OF LINE-SHAPED PARTICLE FROM INLINE HOLOGRAMS')
+    st.write('')
+    row_1_col_1, row_1_col_2, row_1_col_3 = st.columns(3, gap = "large")
+
+    ### Insert the image into web browser ###
+    exp_setup = open("asset/Experimental setup.jpg", "rb")
+    contents1 = exp_setup.read()
+    data_url1 = base64.b64encode(contents1).decode("utf-8")
+    exp_setup.close()
+
+    with row_1_col_1:
+        st.markdown(
+            f'<div class = "imgthesis"; style = "margin-top: 40px;">'
+            f'<img src="data:image/gif;base64,{data_url1}";  style = "border-radius:15px">'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class = "txtthesis">'
+            f'<p>Experimental setup for recording the line-shaped particle holograms</p>',
+            unsafe_allow_html=True,
+        )
+        
+    
+    ### Insert the image into web browser ###
+    holo = open("asset/Hologram 40 cm 60 degree.png", "rb")
+    contents2 = holo.read()
+    data_url2 = base64.b64encode(contents2).decode("utf-8")
+    holo.close()
+
+    with row_1_col_2:
+        st.markdown(
+            f'<div class = "imgthesis">'
+            f'<img src="data:image/gif;base64,{data_url2}";  style = "border-radius:15px">'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class = "txtthesis">'
+            f'<p>Digital hologram of the line-shaped particle</p>',
+            unsafe_allow_html=True,
+        )
+
+    ### Insert the image into web browser ###
+    num_recon = open("asset/Reconstruction from best focus images 40 cm 60 degree 11th row.png", "rb")
+    contents3 = num_recon.read()
+    data_url3 = base64.b64encode(contents3).decode("utf-8")
+    num_recon.close()
+    
+    with row_1_col_3:
+        st.markdown(
+            f'<div class = "imgthesis">'
+            f'<img src="data:image/gif;base64,{data_url3}";  style = "border-radius:15px">'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class = "txtthesis">'
+            f'<p>Numerical reconstruction based on Fresnel diffraction integral</p>',
+            unsafe_allow_html=True,
+        )
+        
+    st.write('')
+    st.write('')
+    st.write(""" Since my master's degree studeis, I had a chance to work with the digital holography (DH). Firstly, it is the experimental
+            setup for hologram recording. The particle is a microfiber with 100 μm diameter, that attached on the object holder. The hologram signal of the
+            particle was stored by using the CCD sensor with the resolution of 640×480 pixel. The second one is the digital hologram image.
+            After get the digital hologram signal from the particle, the numerical reconstruction was done by using Fresnel diffraction intergral,
+            which was expressed by using Fourier transform. Then, extracting the depth position and particle diameter from row-by-row (480 rows)
+            using the digital image processing and digital signal processing technique, which the depth position is the distance between
+            CCD sensor to the line-shaped particle. Although we know the specification in that the particle diameter is 100 μm, 
+            but the exact information of the particle diameter from row-by-row cannot be directly known. Therefore,
+            this thesis has improved the accuracy of morphological analysis of the small particle.""")
+    st.write('')
+    st.write('')
+
+    row_2_col_1, row_2_col_2 = st.columns(2, gap = "large")
+    
+    ### Insert the image into web browser ###
+    depth_po = open("asset/Depth position (40 cm with 60_75 degree).png", "rb")
+    contents4 = depth_po.read()
+    data_url4 = base64.b64encode(contents4).decode("utf-8")
+    depth_po.close()
+    
+    with row_2_col_1:
+        st.markdown(
+            f'<div class = "imgthesis">'
+            f'<img src="data:image/gif;base64,{data_url4}";  style = "border-radius:15px">'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class = "txtthesis">'
+            f'<p>Depth measurements of the line-shaped particle</p>',
+            unsafe_allow_html=True,
+        )
+
+    ### Insert the image into web browser ###
+    depth_po = open("asset/Diameter (40 cm with 60_75 degree).png", "rb")
+    contents4 = depth_po.read()
+    data_url4 = base64.b64encode(contents4).decode("utf-8")
+    depth_po.close()
+    
+    with row_2_col_2:
+        st.markdown(
+            f'<div class = "imgthesis">'
+            f'<img src="data:image/gif;base64,{data_url4}";  style = "border-radius:15px">'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class = "txtthesis">'
+            f'<p>Depth measurements of the line-shaped particle</p>',
+            unsafe_allow_html=True,
+        )
+    
+    st.write('')
+    st.write('')
+    st.write("""After extracting the depth position and diameter measurements, analyze the measurements 
+            that why the plotting of these measurements are spread out like the images shown above. 
+            For the reason of the error, it cause from the spatial frequency for the shorter recording 
+            distance is higher, that cause more aliasing effect. To improve the measurement results,
+            it can be done by using a higher resolution of image sensor for hologram recording.
+            Finally, use this 3-D information to construct the 3-D microtube shape.""")
+    st.write('')
+    st.write('')
+
+    row_3_col_1, row_3_col_2 = st.columns(2, gap = "large")
+    
+    ### Insert the image into web browser ###
+    microtube_shape = open("asset/3-D microtube from 40 cm 60 degree.png", "rb")
+    contents5 = microtube_shape.read()
+    data_url5 = base64.b64encode(contents5).decode("utf-8")
+    microtube_shape.close()
+    
+    with row_3_col_1:
+        st.markdown(
+            f'<div class = "imgthesis">'
+            f'<img src="data:image/gif;base64,{data_url5}";  style = "border-radius:15px">'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class = "txtthesis">'
+            f'<p>3-D display of the microtube shape</p>',
+            unsafe_allow_html=True,
+        )
+
+    ### Insert the video into web browser ###
+    interactive_vid = open("asset/Movement along the x-axis (480p).mp4", "rb")
+    contents6 = interactive_vid.read()
+    data_url6 = base64.b64encode(contents6).decode("utf-8")
+    interactive_vid.close()
+
+    video_file = open('asset/Movement along the x-axis (480p).mp4', 'rb')
+    video_bytes = video_file.read()
+   
+    with row_3_col_2:
+        st.write('')
+        st.write('')
+        st.write('')
+        st.video(video_bytes)
+        st.markdown(
+            f'<div class = "txtthesis"; style = "margin-top: -6px;">'
+            f'<p>Interactive of the 3-D display microtube shape</p>',
+            unsafe_allow_html=True,
+        )
+
+    st.write('')
+    st.write('')
+    st.write("""According to the proposed of the thesis, a user can interact with the 3-D microtube shape
+            by using a hand movement via an external webcam. In addition, the hand detection was developed
+            based on the blob analysis algorithm. Therefore, this thesis also improved a visual perception 
+            and reality sense of a user.""")
+    st.write('')
+    st.write('')
+
+
 def page3():
 
     df = pd.read_csv("sample-store.csv")   # Import the data file
@@ -477,7 +660,7 @@ def page3():
 
 page_names_to_funcs = {
     "Resume": page1,
-    #"Thesis": page2,
+    "Thesis": page2,
     "Sales Dashboard (my project)": page3,
 }
 
