@@ -560,7 +560,7 @@ def page3():
         
         ##### Top Selling Category #####
         fig4 = px.pie(cat_sale, labels='Category', values='Sales', names='Category')
-        fig4.update_traces(hoverinfo='label+percent', textinfo='label+percent', textfont_size=16, textfont_color = "White")
+        fig4.update_traces(hoverinfo='label+percent', textinfo='label+percent', textposition='inside', textfont_size=16, textfont_color = "White")
         fig4.update_layout(font_family="sans-serif", plot_bgcolor="#F2F2F2", legend = dict(font = dict(family = "sans-serif", size = 16)),
                   legend_title = dict(font = dict(family = "sans-serif", size = 16)))
         st.plotly_chart(fig4, use_container_width=True)
