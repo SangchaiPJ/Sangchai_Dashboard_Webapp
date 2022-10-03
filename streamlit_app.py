@@ -264,7 +264,7 @@ def page2():
         
     st.write('')
     st.write('')
-    st.write(""" Since my master's degree studeis, I had a chance to work with the digital holography (DH). Firstly, it is the experimental
+    st.write(""" Since my master's degree studies, I have had a chance to work with the digital holography (DH). Firstly, it is the experimental
             setup for hologram recording. The particle is a microfiber with 100 μm diameter, that attached on the object holder. The hologram signal of the
             particle was stored by using the CCD sensor with the resolution of 640×480 pixel. The second one is the digital hologram image.
             After get the digital hologram signal from the particle, the numerical reconstruction was done by using Fresnel diffraction intergral,
