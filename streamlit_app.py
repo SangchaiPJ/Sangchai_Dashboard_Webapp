@@ -563,7 +563,7 @@ def page3():
         fig4.update_traces(hoverinfo='label+percent', textinfo='label+percent', textposition='inside', textfont_size=16, textfont_color = "White")
         fig4.update_layout(font_family="sans-serif", plot_bgcolor="#F2F2F2", legend = dict(font = dict(family = "sans-serif", size = 16)),
                   legend_title = dict(font = dict(family = "sans-serif", size = 16)),
-                  margin=dict(l=5, r=5, t=5, b=5))
+                  margin=dict(l=3, r=3, t=3, b=3))
         st.plotly_chart(fig4, use_container_width=True)
     
     #### Sales by Sub-Cat ####
