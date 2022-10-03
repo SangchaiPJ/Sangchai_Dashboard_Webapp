@@ -319,7 +319,7 @@ def page2():
     st.write('')
     st.write('')
     st.write("""After extracting the depth position and diameter measurements, analyze the measurements 
-            that why the plotting of these measurements are spread out like the images shown above. 
+            that why the plotting of these measurements is spread out like the images shown above. 
             For the reason of the error, it cause from the spatial frequency for the shorter recording 
             distance is higher, that cause more aliasing effect. To improve the measurement results,
             it can be done by using a higher resolution of image sensor for hologram recording.
