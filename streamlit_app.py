@@ -372,8 +372,9 @@ def page2():
     st.write('')
     st.write("""According to the proposed of the thesis, a user can interact with the 3-D microtube shape
             by using a hand movement via an external webcam. In addition, the hand detection was developed
-            based on the blob analysis algorithm. Therefore, this thesis also improved a visual perception 
-            and reality sense of a user.""")
+            based on the blob analysis algorithm. For conclusions, this thesis does not only improved 
+            the accuracy of morphological analysis of particle, but also a visual perception and reality 
+            sense of a user.""")
     st.write('')
     st.write('')
 
