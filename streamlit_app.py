@@ -477,7 +477,7 @@ def page3():
 
 page_names_to_funcs = {
     "Resume": page1,
-    "Thesis": page2,
+    #"Thesis": page2,
     "Sales Dashboard (my project)": page3,
 }
 
