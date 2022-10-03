@@ -22,7 +22,7 @@ def local_css(file_name):
 local_css("style.css")  # Load file "style.css"
 
 
-def page2():
+def page1():
 
     image = Image.open('asset/My face.png') 
     
@@ -476,7 +476,8 @@ def page3():
         visiting this small web app.""")
 
 page_names_to_funcs = {
-    "My resume": page2,
+    "Resume": page1,
+    "Thesis": page2,
     "Sales Dashboard (my project)": page3,
 }
 
