@@ -42,9 +42,8 @@ def page1():
         As a results, we measure the particle depth position (a position between the CCD sensor and particle)\
         and particle diameter by image processing technique. Finally, we construct the digital 3-D particle from the\
         depth potision and its diameter measurements that is extracted from the digital hologram.\
-        Also, a user can interact with the digital 3-D particle image by using hand detection system based on the blob analysis method.\
-        As described above, all computations were done by using MATLAB.\
-        This field is related to an image processing and digital signal processing. 
+        Plus, a user can interact with the digital 3-D particle image by using hand detection system based on the blob analysis method.\
+        As described above, all computations were done by using MATLAB.\ In addition, I have knowledge of machine learning and data visualization.
         Currently, I'm seeking the data scientist position where utilize my abilities, analysis, and laterel thinking to\
         achieve organization objectives.""")
 
@@ -70,16 +69,18 @@ def page1():
         st.write("● MATLAB\
         \n● Python\
         \n● C/C++\
-        \n● Streamlit")
+        \n● Streamlit\
+        \n● SQL")
     
     with col2:
-        st.write("● SQL\
-        \n● Power BI\
+        st.write("● Power BI\
+        \n● Microsoft Office\
         \n● HTML\
-        \n● CSS")
+        \n● CSS\
+        \n● JavaScript (basic)")
 
     with col3:
-        st.write("● JavaScript (basic)\
+        st.write("● Machine Learning\
         \n● Image processing\
         \n● Digital signal processing")
 
