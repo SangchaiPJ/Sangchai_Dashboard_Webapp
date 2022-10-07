@@ -48,7 +48,7 @@ def page1():
         achieve organization objectives.""")
 
     ### WORK EXPERINCE ###
-    st.write('### WORK EXPERIENCE')
+    st.write('## WORK EXPERIENCE')
     st.write("#### March 2018 - June 2018")
     st.write('● Drive Test Engineer internship at Seagate Technology (Thailand) Co., Ltd. (Korat)')
     
