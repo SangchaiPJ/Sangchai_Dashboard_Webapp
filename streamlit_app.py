@@ -44,7 +44,7 @@ def page1():
         depth potision and its diameter measurements that is extracted from the digital hologram.\
         Plus, a user can interact with the digital 3-D particle image by using hand detection system based on the blob analysis method.\
         As described above, all computations were done by using MATLAB. In addition, I have knowledge of machine learning and data visualization.
-        Currently, I'm seeking the data scientist position where utilize my abilities, analysis, and laterel thinking to\
+        Currently, I'm seeking a challenging position where utilize my abilities, analysis, and laterel thinking to\
         achieve organization objectives.""")
 
     ### WORK EXPERINCE ###
