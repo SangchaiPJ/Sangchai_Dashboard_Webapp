@@ -75,8 +75,7 @@ def page1():
         st.write("● Microsoft Office\
         \n● HTML\
         \n● CSS\
-        \n● JavaScript (basic)\
-        \n● Robot Framework")
+        \n● JavaScript (basic)")
 
     with col3:
         st.write("● Robot Framework\
