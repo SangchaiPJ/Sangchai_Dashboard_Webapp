@@ -31,21 +31,14 @@ def page1():
     st.image(image)
     st.write('')
     st.write('')
-    st.write("""I\'m Sangchai Paijit. You can call me Babe. I\'m 26 years old.\
+    st.write("""I\'m Sangchai Paijit. My nickname is Babe. I\'m 26 years old.\
         I graduated with a bachelor's degree in electronic engineering from Suranaree University of Technology.\
         Also, I graduated with a master's degree in electrical engineering from Suranaree University of Technology.\
-        I have an experiences with the digital holography (DH) during a master\'s degree studies.\
-        For a brief explanation, we store the hologram signal of the particle by using the CCD sensor with the resolution of 640×480 pixel.
-        Next, we import the data to MATLAB then analyze the hologram signal by calculating the numerical reconstruction by using\
-        Fresnel diffraction integral. We analyze the hologram signal from row-by-row according to the number of rows of the CCD sensor\
-        in vertical axis (480 rows) by taking the numerical computation of Fresnel diffraction integral, that is expressed by Fourier transform.\
-        As a results, we measure the particle depth position (a position between the CCD sensor and particle)\
-        and particle diameter by image processing technique. Finally, we construct the digital 3-D particle from the\
-        depth potision and its diameter measurements that is extracted from the digital hologram.\
-        Plus, a user can interact with the digital 3-D particle image by using hand detection system based on the blob analysis method.\
-        As described above, all computations were done by using MATLAB. In addition, I have knowledge of machine learning and data visualization.
-        Currently, I'm seeking a challenging position where utilize my abilities, analysis, and laterel thinking to\
-        achieve organization objectives.""")
+        I had a chance to work with Seagate Technology (Thailand) as internship for 4 months during my bachelor's studies,\
+        that the responsibilities are inspecting various pieces of machinery, analyzing issues, identifying the root cause of\
+        malfunctions, and electronic circuit design. Furthermore, I have knowledge of programming languages and automation\
+        testing tools such as MATLAB, Python, Robot Framework, Selenium library, etc. Currently, seeking a challenging position\
+        where utilize my abilities, analysis, and laterel thinking to achieve organization objectives.""")
 
     ### WORK EXPERINCE ###
     st.title('WORK EXPERIENCE')
