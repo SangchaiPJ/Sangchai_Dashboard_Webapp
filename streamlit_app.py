@@ -92,7 +92,7 @@ def page1():
         \n● Self-confidence")
     
     with col22:
-        st.write("● Planning and problem solving\
+        st.write("● Planning and problem-solving\
         \n● Accepting feedback")
 
     ### LANGUAGES ###
