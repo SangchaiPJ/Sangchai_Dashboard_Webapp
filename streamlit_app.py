@@ -68,7 +68,7 @@ def page1():
     with col1:
         st.write("● MATLAB\
         \n● Python\
-        \n● C/C++\
+        \n● C\
         \n● Streamlit\
         \n● SQL")
     
