@@ -34,11 +34,11 @@ def page1():
     st.write("""I\'m Sangchai Paijit. My nickname is Babe. I\'m 26 years old.\
         I graduated with a bachelor's degree in electronic engineering from Suranaree University of Technology.\
         Also, I graduated with a master's degree in electrical engineering from Suranaree University of Technology.\
-        I had a chance to work with Seagate Technology (Thailand) as internship for 4 months during my bachelor's studies,\
+        I had a chance to work with Seagate Technology (Thailand) as an internship for 4 months during my bachelor's studies,\
         that the responsibilities are inspecting various pieces of machinery, analyzing issues, identifying the root cause of\
         malfunctions, and electronic circuit design. Furthermore, I have knowledge of programming languages and automation\
         testing tools such as MATLAB, Python, Robot Framework, Selenium library, etc. Currently, seeking a challenging position\
-        where utilize my abilities, analysis, and laterel thinking to achieve organization objectives.""")
+        where utilize my abilities, analysis, and lateral thinking to achieve organizational objectives.""")
 
     ### WORK EXPERINCE ###
     st.title('WORK EXPERIENCE')
