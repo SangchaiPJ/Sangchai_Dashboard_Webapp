@@ -89,7 +89,7 @@ def page1():
 
     with col11:
         st.write("● Self-motivation\
-        \n● Self-confidence")
+        \n● Team working")
     
     with col22:
         st.write("● Planning and problem-solving\
