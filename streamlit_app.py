@@ -85,7 +85,7 @@ def page1():
 
     ### SOFT SKILLS ###
     st.title('SOFT SKILLS')
-    col11, col22, col33, col44 = st.columns(4)
+    col11, col22 = st.columns(2)
 
     with col11:
         st.write("● Self-motivation\
