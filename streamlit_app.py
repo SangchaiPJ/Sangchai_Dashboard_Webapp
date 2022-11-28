@@ -69,20 +69,20 @@ def page1():
         st.write("● MATLAB\
         \n● Python\
         \n● C\
-        \n● Streamlit\
-        \n● SQL")
+        \n● Streamlit")
     
     with col2:
-        st.write("● Power BI\
-        \n● Microsoft Office\
+        st.write("● Microsoft Office\
         \n● HTML\
         \n● CSS\
-        \n● JavaScript (basic)")
+        \n● JavaScript (basic)\
+        \n● Robot Framework")
 
     with col3:
-        st.write("● Machine Learning\
-        \n● Image processing\
-        \n● Digital signal processing")
+        st.write("● Robot Framework\
+        \n● Selenium\
+        \n● Postman\
+        \n● SQL")
 
     ### SOFT SKILLS ###
     st.title('SOFT SKILLS')
