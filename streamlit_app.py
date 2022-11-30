@@ -657,7 +657,7 @@ def page3():
 
 def page4():
     st.title('AUTOMATED TEST')
-    st.write('#### XYZ banking (web app to practice automation testing')
+    st.write('#### XYZ banking (basic web app to practice automation testing)')
 
     
 
