@@ -651,7 +651,7 @@ def page3():
 
 def page4():
     st.title('AUTOMATED TEST')
-    st.write('#### XYZ banking (basic web app to practice automation testing)')
+    st.write('#### XYZ bank (basic web app to practice an automation testing skill)')
 
     row_1_col_1, row_1_col_2 = st.columns(2, gap = "large")
 
