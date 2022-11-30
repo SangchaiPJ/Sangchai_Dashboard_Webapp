@@ -699,7 +699,9 @@ def page4():
     will be tested as follow:""")
     st.write("""1. User can login by clicking "Customer Login" button then choose any account from a dropdown list\
     that they want to login.\
-    \n2. User can see an interface after login, that consists of Account Number, Balance, and Currency.""")
+    \n2. User can see an interface after login, that consists of account number, balance, and currency.\
+    \n3. User can deposit money, withdraw money, and see a history of transactions.\
+    \n4. User can logout by clicking "Logout" button then return to the selected user page.""")
 
 
 page_names_to_funcs = {
