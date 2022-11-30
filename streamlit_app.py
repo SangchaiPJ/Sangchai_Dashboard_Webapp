@@ -341,12 +341,6 @@ def page2():
             unsafe_allow_html=True,
         )
 
-    ### Insert the video into web browser ###
-    interactive_vid = open("asset/Movement along the x-axis (480p).mp4", "rb")
-    contents6 = interactive_vid.read()
-    data_url6 = base64.b64encode(contents6).decode("utf-8")
-    interactive_vid.close()
-
     video_file = open('asset/Movement along the x-axis (480p).mp4', 'rb')
     video_bytes = video_file.read()
    
