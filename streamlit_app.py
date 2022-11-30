@@ -684,7 +684,9 @@ def page4():
         f'<p>XYZ bank web page</p>',
         unsafe_allow_html=True,
     )
-
+    url = "https://www.streamlit.io"
+    st.write("check out this [link](%s)" % url)
+    st.markdown("check out this [link](%s)" % url)
     st.write('')
     st.write(""" On this bank website, we can login by clicking "Customer Login" button then we will see various names inside a dropdown list\
         to login. Due to this website is no username and password required to login, when user select a name then\
