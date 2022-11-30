@@ -697,8 +697,9 @@ def page4():
 
     st.write(""" For this project, Robot Framework and Selenium library are used to do an automation testing. The main funtionalities that\
     will be tested as follow:""")
-    st.write("""1. The user can login by clicking "Customer Login" button with the account that they went to login.
-    \n2.""")
+    st.write("""1. User can login by clicking "Customer Login" button then choose any account from a dropdown list\
+    that they want to login.\
+    \n2. User can see an interface after login, that consists of Account Number, Balance, and Currency.""")
 
 
 page_names_to_funcs = {
