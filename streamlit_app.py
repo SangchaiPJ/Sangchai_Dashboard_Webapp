@@ -661,18 +661,17 @@ def page4():
     data_url7 = base64.b64encode(contents7).decode("utf-8")
     xyz_page.close()
 
-    with row_1_col_1:
-        st.markdown(
+    st.markdown(
             f'<div class = "imgthesis"; style = "margin-top: 40px;">'
             f'<img src="data:image/gif;base64,{data_url7}";  style = "border-radius:15px">'
             f'</div>',
             unsafe_allow_html=True,
-        )
-        st.markdown(
+    )
+    st.markdown(
             f'<div class = "txtthesis">'
             f'<p>XYZ banking web page</p>',
             unsafe_allow_html=True,
-        )
+    )
 
     
 
