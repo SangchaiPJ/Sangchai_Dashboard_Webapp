@@ -662,18 +662,28 @@ def page4():
     xyz_page.close()
 
     ### Insert the image of XYZ banking web page ###
-    st.markdown(
+    with row_1_col_1:
+        st.markdown(
             f'<div class = "imgautomated"; style = "margin-top: 40px;">'
             f'<img src="data:image/gif;base64,{data_url7}";  style = "border-radius:15px">'
             f'</div>',
             unsafe_allow_html=True,
-    )
-    st.markdown(
+        )
+        st.markdown(
             f'<div class = "txtautomated">'
             f'<p>XYZ banking web page</p>',
             unsafe_allow_html=True,
-    )
+        )
+        
+        ### Insert the video of login functional ###    
+        video_file2 = open('asset/Names to login.mp4', 'rb')
+        video_bytes2 = video_file2.read()
 
+        st.write('')
+        st.write('')
+        st.write('')
+        st.video(video_bytes2)
+   
     st.write('')
     st.write('')
     st.write(""" On this bank website, we can login by clicking "Customer Login" then we will see various names\
@@ -681,13 +691,6 @@ def page4():
     st.write('')
     st.write('')
 
-    video_file2 = open('asset/Names to login.mp4', 'rb')
-    video_bytes2 = video_file2.read()
-
-    st.write('')
-    st.write('')
-    st.write('')
-    st.video(video_bytes2)
 
 page_names_to_funcs = {
     "Resume": page1,
