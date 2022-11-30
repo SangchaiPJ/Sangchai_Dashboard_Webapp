@@ -681,7 +681,7 @@ def page4():
 
     st.markdown(
         f'<div class = "txtautomated">'
-        f'<p>XYZ bank web page</p>',
+        f'<p>XYZ bank web page (Visit here &#128512 https://www.globalsqa.com/angularJs-protractor/BankingProject/#/account</p>',
         unsafe_allow_html=True,
     )
 
