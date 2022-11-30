@@ -682,7 +682,6 @@ def page4():
     st.markdown(
         f'<div class = "txtautomated">'
         f'<p>XYZ bank web page</p>',
-        f'<a href="https://www.w3schools.com">Visit W3Schools.com!</a>',
         unsafe_allow_html=True,
     )
 
