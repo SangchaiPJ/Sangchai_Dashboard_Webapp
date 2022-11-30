@@ -653,6 +653,27 @@ def page4():
     st.title('AUTOMATED TEST')
     st.write('#### XYZ banking (basic web app to practice automation testing)')
 
+    row_1_col_1, row_1_col_2, row_1_col_3 = st.columns(3, gap = "large")
+
+    ### Insert the image into web browser ###
+    xyz_page = open("asset/XYZ banking web page.png", "rb")
+    contents7 = xyz_page.read()
+    data_url7 = base64.b64encode(contents7).decode("utf-8")
+    xyz_page.close()
+
+    with row_1_col_1:
+        st.markdown(
+            f'<div class = "imgthesis"; style = "margin-top: 40px;">'
+            f'<img src="data:image/gif;base64,{data_url7}";  style = "border-radius:15px">'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            f'<div class = "txtthesis">'
+            f'<p>XYZ banking web page</p>',
+            unsafe_allow_html=True,
+        )
+
     
 
 page_names_to_funcs = {
