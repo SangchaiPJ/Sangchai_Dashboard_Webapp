@@ -662,7 +662,7 @@ def page4():
 
 page_names_to_funcs = {
     "Resume": page1,
-    "Thesis": page2,
+    "Thesis (master's studies)": page2,
     "Sales Dashboard (proj_1)": page3,
     "Automated test (proj_2)": page4,
 }
