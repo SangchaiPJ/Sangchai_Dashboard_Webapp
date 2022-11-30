@@ -52,7 +52,7 @@
 }
 
 .imgautomated:hover {
-    transform: scaleY(0.1);
+    transform: scaleX(0.1);
 }
 
 .txtautomated {
