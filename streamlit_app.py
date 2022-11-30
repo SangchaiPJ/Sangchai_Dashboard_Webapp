@@ -684,8 +684,8 @@ def page4():
         f'<p>XYZ bank web page</p>',
         unsafe_allow_html=True,
     )
-    url = "https://www.streamlit.io"
-    st.write("#### 🟢 Visit this website here [link](%s)" % url)
+    url_xyz = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/account"
+    st.write("#### 🟢 Visit this website here [link](%s)" % url_xyz)
 
     st.write('')
     st.write(""" On this bank website, we can login by clicking "Customer Login" button then we will see various names inside a dropdown list\
