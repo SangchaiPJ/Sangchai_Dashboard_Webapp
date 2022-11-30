@@ -674,7 +674,7 @@ def page4():
         ### Insert the video of login functional ###    
         video_file2 = open('asset/Names to login.mp4', 'rb')
         video_bytes2 = video_file2.read()
-
+        st.write('')
         st.write('')
         st.write('')
         st.video(video_bytes2)
