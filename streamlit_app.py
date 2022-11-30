@@ -292,14 +292,14 @@ def page2():
 
     ### Insert the image into web browser ###
     depth_po = open("asset/Diameter (40 cm with 60_75 degree).png", "rb")
-    contents4 = depth_po.read()
-    data_url4 = base64.b64encode(contents4).decode("utf-8")
+    contents5 = depth_po.read()
+    data_url5 = base64.b64encode(contents5).decode("utf-8")
     depth_po.close()
     
     with row_2_col_2:
         st.markdown(
             f'<div class = "imgthesis">'
-            f'<img src="data:image/gif;base64,{data_url4}";  style = "border-radius:15px">'
+            f'<img src="data:image/gif;base64,{data_url5}";  style = "border-radius:15px">'
             f'</div>',
             unsafe_allow_html=True,
         )
@@ -324,14 +324,14 @@ def page2():
     
     ### Insert the image into web browser ###
     microtube_shape = open("asset/3-D microtube from 40 cm 60 degree.png", "rb")
-    contents5 = microtube_shape.read()
-    data_url5 = base64.b64encode(contents5).decode("utf-8")
+    contents6 = microtube_shape.read()
+    data_url6 = base64.b64encode(contents6).decode("utf-8")
     microtube_shape.close()
     
     with row_3_col_1:
         st.markdown(
             f'<div class = "imgthesis">'
-            f'<img src="data:image/gif;base64,{data_url5}";  style = "border-radius:15px">'
+            f'<img src="data:image/gif;base64,{data_url6}";  style = "border-radius:15px">'
             f'</div>',
             unsafe_allow_html=True,
         )
