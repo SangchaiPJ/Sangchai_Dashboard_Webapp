@@ -655,10 +655,16 @@ def page3():
         at the upper right-hand side, then click at "setting" in order to set up the theme of the web app. Finally, I sincerely thank you for\
         visiting this small web app.""")
 
+def page4():
+    st.title('AUTOMATED TEST')
+
+    
+
 page_names_to_funcs = {
     "Resume": page1,
     "Thesis": page2,
     "Sales Dashboard (my project)": page3,
+    "Automation testing": page4,
 }
 
 selected_page = st.sidebar.selectbox("Choose an option", page_names_to_funcs.keys())
