@@ -656,7 +656,7 @@ def page4():
     row_1_col_1, row_1_col_2 = st.columns(2, gap = "large")
 
     ### Import XYZ banking web page ###
-    xyz_page = open("asset/XYZ banking web page.png", "rb")
+    xyz_page = open("asset/XYZ bank web page.png", "rb")
     contents7 = xyz_page.read()
     data_url7 = base64.b64encode(contents7).decode("utf-8")
     xyz_page.close()
