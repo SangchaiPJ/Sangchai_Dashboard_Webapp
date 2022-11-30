@@ -685,6 +685,7 @@ def page4():
         unsafe_allow_html=True,
     )
     url_xyz = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login"
+    st.write('')
     st.write("##### 🟢 Visit this website here [link](%s)" % url_xyz)
 
     st.write('')
