@@ -682,7 +682,12 @@ def page4():
     st.write('')
 
     video_file2 = open('asset/Names to login.mp4', 'rb')
-    video_bytes = video_file2.read()
+    video_bytes2 = video_file2.read()
+
+    st.write('')
+    st.write('')
+    st.write('')
+    st.video(video_bytes2)
 
 page_names_to_funcs = {
     "Resume": page1,
