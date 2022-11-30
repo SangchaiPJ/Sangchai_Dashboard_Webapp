@@ -669,11 +669,6 @@ def page4():
             f'</div>',
             unsafe_allow_html=True,
         )
-        st.markdown(
-            f'<div class = "txtautomated">'
-            f'<p>XYZ banking web page</p>',
-            unsafe_allow_html=True,
-        )
         
     with row_1_col_2:
         ### Insert the video of login functional ###    
@@ -683,6 +678,13 @@ def page4():
         st.write('')
         st.write('')
         st.video(video_bytes2)
+
+    st.markdown(
+        f'<div class = "txtautomated">'
+        f'<p>XYZ banking web page</p>',
+        unsafe_allow_html=True,
+    )
+        
    
     st.write('')
     st.write('')
