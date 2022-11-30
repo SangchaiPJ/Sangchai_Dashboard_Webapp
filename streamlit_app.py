@@ -684,12 +684,11 @@ def page4():
         f'<p>XYZ banking web page</p>',
         unsafe_allow_html=True,
     )
-        
-   
-    st.write('')
+
     st.write('')
     st.write(""" On this bank website, we can login by clicking "Customer Login" then we will see various names\
-        to login. This website is no require for username and password to login.""")
+        to login. Due to this website is no require for username and password to login, when user choose a name to login then click login,\
+        the login is successful.""")
     st.write('')
     st.write('')
 
