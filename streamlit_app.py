@@ -695,6 +695,9 @@ def page4():
     st.write('')
     st.write('')
 
+    st.write(""" For this project, Robot Framework and Selenium library are used to do an automation testing. The main funtionalities that\
+    will be tested as follow:""")
+
 
 page_names_to_funcs = {
     "Resume": page1,
