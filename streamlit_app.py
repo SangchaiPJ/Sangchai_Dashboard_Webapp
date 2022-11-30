@@ -703,6 +703,8 @@ def page4():
     \n3. User can deposit money, withdraw money, and see a history of transactions.\
     \n4. User can logout by clicking "Logout" button then return to the selected user page.""")
 
+    st.write("""##New content coming soon""")
+
 
 page_names_to_funcs = {
     "Resume": page1,
