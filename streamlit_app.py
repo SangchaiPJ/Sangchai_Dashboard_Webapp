@@ -684,7 +684,7 @@ def page4():
         f'<p>XYZ bank web page</p>',
         unsafe_allow_html=True,
     )
-    url_xyz = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/account"
+    url_xyz = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login"
     st.write("#### 🟢 Visit this website here [link](%s)" % url_xyz)
 
     st.write('')
