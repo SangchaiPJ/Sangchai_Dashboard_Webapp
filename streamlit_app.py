@@ -686,9 +686,10 @@ def page4():
     )
 
     st.write('')
-    st.write(""" On this bank website, we can login by clicking "Customer Login" then we will see various names\
-        to login. Due to this website is no require for username and password to login, when user choose a name to login then click login,\
-        the login is successful.""")
+    st.write(""" On this bank website, we can login by clicking "Customer Login" button then we will see various names inside a dropdown list\
+        to login. Due to this website is no username and password required to login, when user select a name then\
+        click login button, the login is successful. Inside this website, user can see their account number, current balance and currency of account.\
+        Furthermore, user can deposit money, withdraw  money, and also view a history of transactions.""")
     st.write('')
     st.write('')
 
