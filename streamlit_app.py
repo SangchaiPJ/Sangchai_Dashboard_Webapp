@@ -674,7 +674,15 @@ def page4():
             unsafe_allow_html=True,
     )
 
-    
+    st.write('')
+    st.write('')
+    st.write(""" On this bank website, we can login by clicking "Customer Login" then we will see various names\
+        to login. This website is no require for username and password to login.""")
+    st.write('')
+    st.write('')
+
+    video_file = open('asset/Names to login.mp4', 'rb')
+    video_bytes = video_file.read()
 
 page_names_to_funcs = {
     "Resume": page1,
