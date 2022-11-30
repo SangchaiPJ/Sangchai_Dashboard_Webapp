@@ -653,7 +653,7 @@ def page4():
     st.title('AUTOMATED TEST')
     st.write('#### XYZ banking (basic web app to practice automation testing)')
 
-    row_1_col_1, row_1_col_2, row_1_col_3 = st.columns(3, gap = "large")
+    row_1_col_1 = st.columns(1, gap = "large")
 
     ### Insert the image into web browser ###
     xyz_page = open("asset/XYZ banking web page.png", "rb")
