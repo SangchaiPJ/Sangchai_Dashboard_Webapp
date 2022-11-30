@@ -37,3 +37,27 @@
     font-size: 16px;
     text-align: center;
 }
+
+.imgautomated {
+    display: flex;
+    border-radius: 50px; 
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    width: auto;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    cursor: pointer;   
+    transition: transform 0.4s;
+}
+
+.imgautomated:hover {
+    transform: scaleY(0.3);
+}
+
+.txtautomated {
+    margin-top: 10px;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
