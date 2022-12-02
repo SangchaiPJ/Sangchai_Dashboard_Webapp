@@ -714,6 +714,32 @@ def page4():
     st.write("#### *** Test Cases ***")
     st.write("##### TC-001 Verify that user can login by choosing any name from a dropdown list")
 
+    row_2_col_1, row_2_col_2 = st.columns(2, gap = "large")
+
+    ### Import XYZ banking web page ###
+    tc001 = open("asset/tc001.png", "rb")
+    contents8 = tc001.read()
+    data_url8 = base64.b64encode(contents8).decode("utf-8")
+    xyz_page.close()
+
+    ### Insert the image of XYZ banking web page ###
+    with row_2_col_1:
+        st.markdown(
+            f'<div class = "imgautomated"; style = "margin-top: 50px;">'
+            f'<img src="data:image/gif;base64,{data_url8}">'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        
+    with row_2_col_2:
+        ### Insert the video of login functional ###    
+        video_file2 = open('asset/Names to login.mp4', 'rb')
+        video_bytes2 = video_file2.read()
+        st.write('')
+        st.write('')
+        st.write('')
+        st.video(video_bytes2)
+
 
     st.write("## ⌛ New contents coming soon...")
 
