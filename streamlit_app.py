@@ -730,7 +730,8 @@ def page4():
         #     f'</div>',
         #     unsafe_allow_html=True,
         # )
-        
+        st.write('')
+        st.write('')
         image = Image.open("asset/tc001.png")
         st.image(image, caption='Sunrise by the mountains')
     with row_2_col_2:
