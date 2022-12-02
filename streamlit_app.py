@@ -704,6 +704,9 @@ def page4():
     \n3. User can deposit money, withdraw money, and see a history of transactions.\
     \n4. User can logout by clicking "Logout" button then return to the selected user page.""")
 
+    st.write("### Notice")
+    st.write("### TC-001 Verify that user can login by choosing any name from a dropdown list")
+
     st.write("## ⌛ New contents coming soon...")
 
 
