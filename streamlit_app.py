@@ -739,7 +739,8 @@ def page4():
         st.write('')
         st.video(video_bytes3)
 
-    st.write("""In this test case, the condition to confirm that any name can login is that when user login, they can see a balance is 0 dollar""")
+    st.write("""In this test case, the condition to confirm that any name can login is that when user login,\
+        they can see an ""Account Number : " after login.""")
     st.write("## ⌛ New contents coming soon...")
 
 
