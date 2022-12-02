@@ -733,12 +733,12 @@ def page4():
         
     with row_2_col_2:
         ### Insert the video of login functional ###    
-        video_file2 = open('asset/tc001.mp4', 'rb')
-        video_bytes2 = video_file2.read()
+        video_file3 = open('asset/tc001.mp4', 'rb')
+        video_bytes3 = video_file3.read()
         st.write('')
         st.write('')
         st.write('')
-        st.video(video_bytes2)
+        st.video(video_bytes3)
 
 
     st.write("## ⌛ New contents coming soon...")
