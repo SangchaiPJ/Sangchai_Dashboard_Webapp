@@ -740,7 +740,6 @@ def page4():
         video_bytes3 = video_file3.read()
         st.write('')
         st.write('')
-        st.write('')
         st.video(video_bytes3)
 
 
