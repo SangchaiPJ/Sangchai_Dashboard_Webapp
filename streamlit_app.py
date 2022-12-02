@@ -732,6 +732,8 @@ def page4():
         # )
         st.write('')
         st.write('')
+        st.write('')
+        st.write('')
         image = Image.open("asset/tc001.png")
         st.image(image, caption='Sunrise by the mountains')
     with row_2_col_2:
