@@ -724,13 +724,15 @@ def page4():
 
     ### Insert the image of XYZ banking web page ###
     with row_2_col_1:
-        st.markdown(
-            f'<div class = "imgautomated"; style = "margin-top: 50px;">'
-            f'<img src="data:image/gif;base64,{data_url8}">'
-            f'</div>',
-            unsafe_allow_html=True,
-        )
+        # st.markdown(
+        #     f'<div class = "imgautomated"; style = "margin-top: 50px;">'
+        #     f'<img src="data:image/gif;base64,{data_url8}">'
+        #     f'</div>',
+        #     unsafe_allow_html=True,
+        # )
         
+        image = Image.open("asset/tc001.png")
+        st.image(image, caption='Sunrise by the mountains')
     with row_2_col_2:
         ### Insert the video of login functional ###    
         video_file3 = open('asset/tc001.mp4', 'rb')
