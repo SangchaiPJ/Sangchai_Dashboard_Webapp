@@ -714,7 +714,6 @@ def page4():
     st.write("#### *** Test Cases ***")
     st.write("##### TC-001 Verify that user can login by choosing any name from a dropdown list")
 
-    st.write("#### TC-001 Verify that user can login by choosing any name from a dropdown list")
 
     st.write("## ⌛ New contents coming soon...")
 
