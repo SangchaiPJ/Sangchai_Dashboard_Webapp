@@ -724,12 +724,6 @@ def page4():
 
     ### Insert the image of XYZ banking web page ###
     with row_2_col_1:
-        # st.markdown(
-        #     f'<div class = "imgautomated"; style = "margin-top: 50px;">'
-        #     f'<img src="data:image/gif;base64,{data_url8}">'
-        #     f'</div>',
-        #     unsafe_allow_html=True,
-        # )
         st.write('')
         st.write('')
         st.write('')
@@ -745,7 +739,7 @@ def page4():
         st.write('')
         st.video(video_bytes3)
 
-
+    st.write("""In this test case, the condition to confirm that any name can login is that when user login, they can see a balance is 0 dollar""")
     st.write("## ⌛ New contents coming soon...")
 
 
