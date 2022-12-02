@@ -710,9 +710,10 @@ def page4():
     \n1. Sleep/wait around 2-3 seconds during an automation testing for every new page load (It can occur long time for testing).
     \n2. Import "AngularJSLibrary". This will help for finding elements for the website that develop by using AngularJS.""")
 
+    
+    st.write("#### *** Test Cases ***")
     st.write("##### TC-001 Verify that user can login by choosing any name from a dropdown list")
 
-    st.write("#### *** Test Cases ***")
     st.write("#### TC-001 Verify that user can login by choosing any name from a dropdown list")
 
     st.write("## ⌛ New contents coming soon...")
