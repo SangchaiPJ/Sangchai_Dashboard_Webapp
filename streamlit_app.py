@@ -734,8 +734,9 @@ def page4():
         st.write('')
         st.write('')
         st.write('')
-        image = Image.open("asset/tc001.png")
-        st.image(image, caption='Sunrise by the mountains')
+        tc001 = Image.open("asset/tc001.png")
+        st.image(tc001)
+        
     with row_2_col_2:
         ### Insert the video of login functional ###    
         video_file3 = open('asset/tc001.mp4', 'rb')
