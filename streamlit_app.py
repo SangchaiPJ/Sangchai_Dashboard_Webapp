@@ -712,6 +712,8 @@ def page4():
 
     
     st.write("#### *** Test Cases ***")
+
+    #############################################################################################
     st.write("##### TC-001 Verify that user can login by choosing any name from a dropdown list")
 
     row_2_col_1, row_2_col_2 = st.columns(2, gap = "large")
@@ -741,7 +743,10 @@ def page4():
 
     st.write("""In this test case, the condition to confirm that any name can login is that when user login,\
         they can see an ""Account Number : " after login.""")
+    #############################################################################################
 
+    st.write('')
+    st.write('')
     st.write("##### TC-002 Verify that user can deposit money after login")
     st.write("## ⌛ New contents coming soon...")
 
