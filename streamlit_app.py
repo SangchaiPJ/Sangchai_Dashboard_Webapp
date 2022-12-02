@@ -704,7 +704,11 @@ def page4():
     \n3. User can deposit money, withdraw money, and see a history of transactions.\
     \n4. User can logout by clicking "Logout" button then return to the selected user page.""")
 
-    st.write("### Notice")
+    st.write("#### ⚠️ Notice")
+    st.write("""The problem of this website is that when we run an automation testing, any element of this website
+    cannot be seen immediately. They will become visible after a few seconds. The way to solve this problem are as follow:
+    /n1. Sleep around 2-3 seconds during an automation testing for every new page load (It can occur long time for testing).
+    /n2. Import "AngularJSLibrary" inside *** Settings *** """)
     st.write("### TC-001 Verify that user can login by choosing any name from a dropdown list")
 
     st.write("## ⌛ New contents coming soon...")
