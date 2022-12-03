@@ -777,8 +777,8 @@ def page4():
         st.write('')
         st.video(video_bytes4)
 
-    st.write("""In this test case, Ron Weasly deposit money 10000 dollar. To confirm that he can deposit after login, he must see\
-        "Deposit Successful" and see "Balance : 10000".""")
+    st.write("""In this test case, Ron Weasly deposit money 10000 dollar. To confirm that he can deposit is successful\
+        he must see a message of "Deposit Successful" and see "Balance : 10000".""")
     st.write("## ⌛ New contents coming soon...")
 
     #############################################################################################
