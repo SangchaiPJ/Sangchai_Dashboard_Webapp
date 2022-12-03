@@ -802,7 +802,6 @@ def page4():
         st.write('')
         st.write('')
         st.write('')
-        st.write('')
         tc003 = Image.open("asset/tc003.png")
         st.image(tc003)
         
