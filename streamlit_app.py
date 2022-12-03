@@ -777,8 +777,8 @@ def page4():
         st.write('')
         st.video(video_bytes4)
 
-    st.write("""In this test case, the condition to confirm that any name can login is that when user login,\
-        they can see an "Account Number : " after login.""")
+    st.write("""In this test case, Ron Weasly deposit money 100 dollar. To confirm that he can deposit after login, he must see\
+        "Deposit Successful" and see "Balance : 10000".""")
     st.write("## ⌛ New contents coming soon...")
 
     #############################################################################################
