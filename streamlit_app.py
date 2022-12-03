@@ -818,7 +818,7 @@ def page4():
             "Deposit Successful" and see "Balace : 10000". Next, he withdraw money 5000 dollar, after that he must see\
             a message of "Transaction successfull" and the balance decrease in total "Balance : 5000".""")
 
-    st.write("## ⌛ New contents coming soonnnnn...")
+    st.write("## ⌛ New contents coming soonnnnnn...")
 
 page_names_to_funcs = {
     "Resume": page1,
