@@ -745,12 +745,41 @@ def page4():
         they can see an "Account Number : " after login.""")
     #############################################################################################
 
+    #############################################################################################
     st.write('')
     st.write('')
     st.write("##### ✅ TC-002 Verify that user can deposit money after login")
+
+    row_3_col_1, row_3_col_2 = st.columns(2, gap = "large")
+
+    ### Import XYZ banking web page ###
+    tc002 = open("asset/tc001.png", "rb")
+    contents9 = tc002.read()
+    data_url9 = base64.b64encode(contents9).decode("utf-8")
+    xyz_page.close()
+
+    ### Insert the image of XYZ banking web page ###
+    with row_3_col_1:
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        tc001 = Image.open("asset/tc001.png")
+        st.image(tc001)
+        
+    with row_3_col_2:
+        ### Insert the video of login functional ###    
+        video_file4 = open('asset/tc001.mp4', 'rb')
+        video_bytes4 = video_file4.read()
+        st.write('')
+        st.write('')
+        st.video(video_bytes4)
+
+    st.write("""In this test case, the condition to confirm that any name can login is that when user login,\
+        they can see an "Account Number : " after login.""")
     st.write("## ⌛ New contents coming soon...")
 
-
+    #############################################################################################
 page_names_to_funcs = {
     "Resume": page1,
     "Thesis (master's studies)": page2,
