@@ -764,7 +764,7 @@ def page4():
         st.write('')
         st.write('')
         st.write('')
-        tc001 = Image.open("asset/tc001.png")
+        tc001 = Image.open("asset/tc002.png")
         st.image(tc001)
         
     with row_3_col_2:
