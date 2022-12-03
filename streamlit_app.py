@@ -700,8 +700,8 @@ def page4():
     will be tested are as follow:""")
     st.write("""1. User can login by clicking "Customer Login" button then choose any account from a dropdown list\
     that they want to login.\
-    \n2. User can see an interface after login, that consists of account number, balance, and currency.\
-    \n3. User can deposit money, withdraw money, and see a history of transactions.\
+    \n2. User can deposit, and withdraw money.\
+    \n3. User can see a history of transactions.\
     \n4. User can logout by clicking "Logout" button then return to the selected user page.""")
 
     st.write("#### ⚠️ Notice")
