@@ -815,7 +815,7 @@ def page4():
 
     st.write("""After Ron Weasly login, he deposits money 10000 dollar and immediately withdraw money\
         5000 dollar. The condition to confirm that he can do it successful is that when he deposits money, the message shows that\
-            "Deposit Successful" and see "Balace : 10000". Next, he withdraw money 5000 dollar, after that he will see\
+            "Deposit Successful" and see "Balace : 10000". Next, he withdraw money 5000 dollar, after that he must see\
             a message of "Transaction successfull" and the balance decrease in total "Balance : 5000".""")
 
     st.write("## ⌛ New contents coming soon...")
