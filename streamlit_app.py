@@ -817,6 +817,12 @@ def page4():
         5000 dollar. The condition to confirm that he can do it successful is that when he deposits money, the message shows that\
             "Deposit Successful" and see "Balace : 10000". Next, he withdraw money 5000 dollar, after that he must see\
             a message of "Transaction successfull" and the balance decrease in total "Balance : 5000".""")
+    #############################################################################################
+
+    #############################################################################################
+    st.write('')
+    st.write('')
+    st.write("##### ✅ TC-004 Verify that user can see a history of transaction")
 
     st.write("## ⌛ New contents coming soon...")
 
