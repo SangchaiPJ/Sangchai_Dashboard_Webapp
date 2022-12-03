@@ -753,7 +753,7 @@ def page4():
     row_3_col_1, row_3_col_2 = st.columns(2, gap = "large")
 
     ### Import XYZ banking web page ###
-    tc002 = open("asset/tc001.png", "rb")
+    tc002 = open("asset/tc002.png", "rb")
     contents9 = tc002.read()
     data_url9 = base64.b64encode(contents9).decode("utf-8")
     xyz_page.close()
@@ -766,8 +766,8 @@ def page4():
         st.write('')
         st.write('')
         st.write('')
-        tc001 = Image.open("asset/tc002.png")
-        st.image(tc001)
+        tc002 = Image.open("asset/tc002.png")
+        st.image(tc002)
         
     with row_3_col_2:
         ### Insert the video of login functional ###    
@@ -779,9 +779,46 @@ def page4():
 
     st.write("""In this test case, Ron Weasly deposit money 10000 dollar. To confirm that he can deposit is successful\
         he must see a message of "Deposit Successful" and see "Balance : 10000".""")
-    st.write("## ⌛ New contents coming soon...")
 
     #############################################################################################
+
+    #############################################################################################
+    st.write('')
+    st.write('')
+    st.write("##### ✅ TC-003 Verify that user can withdraw money")
+
+    row_4_col_1, row_4_col_2 = st.columns(2, gap = "large")
+
+    ### Import XYZ banking web page ###
+    tc003 = open("asset/tc003.png", "rb")
+    contents10 = tc003.read()
+    data_url10 = base64.b64encode(contents10).decode("utf-8")
+    xyz_page.close()
+
+    ### Insert the image of XYZ banking web page ###
+    with row_4_col_1:
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        tc003 = Image.open("asset/tc003.png")
+        st.image(tc003)
+        
+    with row_4_col_2:
+        ### Insert the video of login functional ###    
+        video_file5 = open('asset/tc003.mp4', 'rb')
+        video_bytes5 = video_file5.read()
+        st.write('')
+        st.write('')
+        st.video(video_bytes5)
+
+    st.write("""In this test case, Ron Weasly deposit money 10000 dollar. To confirm that he can deposit is successful\
+        he must see a message of "Deposit Successful" and see "Balance : 10000".""")
+
+    st.write("## ⌛ New contents coming soon...")
+
 page_names_to_funcs = {
     "Resume": page1,
     "Thesis (master's studies)": page2,
