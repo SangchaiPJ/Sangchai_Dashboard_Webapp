@@ -813,8 +813,10 @@ def page4():
         st.write('')
         st.video(video_bytes5)
 
-    st.write("""In this test case, Ron Weasly deposit money 10000 dollar. To confirm that he can deposit is successful\
-        he must see a message of "Deposit Successful" and see "Balance : 10000".""")
+    st.write("""After Ron Weasly login, he deposit money 10000 dollar and immediately withdraw money\
+        5000 dollar. The condition to confirm that he can do it successful is that when he deposit money, the message shows that\
+            "Deposit Successful" and see "Balace : 10000". Next, he withdraw money 5000 dollar, after that he will see\
+            a message of "Transaction successfull" and the balance decrease in total "Balance : 5000".""")
 
     st.write("## ⌛ New contents coming soon...")
 
