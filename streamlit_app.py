@@ -78,14 +78,14 @@ def page1():
 
     ### SOFT SKILLS ###
     st.title('SOFT SKILLS')
-    col11, col22 = st.columns(2)
+    col11, col22, col33 = st.columns(3)
 
     with col11:
         st.write("● Self-motivation\
         \n● Team working")
     
     with col22:
-        st.write("● Planning and problem-solving\
+        st.write("● Problem-solving\
         \n● Accepting feedback")
 
     ### LANGUAGES ###
