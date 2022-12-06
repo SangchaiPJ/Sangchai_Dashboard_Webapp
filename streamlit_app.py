@@ -672,7 +672,6 @@ def page4():
         st.write('')
         st.write('')
         st.write('')
-        st.write('')
         xyz_page = Image.open("asset/XYZ banking web page.png")
         st.image(xyz_page)
         
