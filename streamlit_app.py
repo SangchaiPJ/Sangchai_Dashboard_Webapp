@@ -856,8 +856,7 @@ def page4():
         st.write('')
         st.video(video_bytes6)
 
-    st.write("""To confirm that any users can see a history of transactions, the condition to confirm it
-    that is when user click "Transactions" button then they can see the start of date time box.""")
+    st.write("""This test case confirm that user can use the logout button in order to logout from the system.""")
     #############################################################################################
 
     st.write("## ⌛ New contents coming soon...")
