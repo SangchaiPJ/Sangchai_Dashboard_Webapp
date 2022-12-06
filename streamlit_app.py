@@ -663,14 +663,14 @@ def page4():
 
     ### Insert the image of XYZ banking web page ###
     with row_1_col_1:
-        st.markdown(
-            f'<div class = "imgautomated"; style = "margin-top: 50px;">'
-            f'<img src="data:image/gif;base64,{data_url7}">'
-            f'</div>',
-            unsafe_allow_html=True,
-        )
-        # xyz_page = Image.open("asset/xyz_page.png")
-        # st.image(xyz_page)
+        # st.markdown(
+        #     f'<div class = "imgautomated"; style = "margin-top: 50px;">'
+        #     f'<img src="data:image/gif;base64,{data_url7}">'
+        #     f'</div>',
+        #     unsafe_allow_html=True,
+        # )
+        xyz_page = Image.open("asset/XYZ banking web page.png")
+        st.image(xyz_page)
         
     with row_1_col_2:
         ### Insert the video of login functional ###    
