@@ -861,7 +861,7 @@ def page4():
     st.write("""This test case confirm that user can use the logout button in order to logout from the system.""")
     #############################################################################################
 
-    st.write("##### 🙏 Thank you very much for taking time thorugh my portfolio. In the future, I will\
+    st.write("##### 🙏 Thank you very much for taking time to look thorugh my portfolio. In the future, I will\
     practice an automation testing skill for a website which has more complexity of UI.")
 
 page_names_to_funcs = {
