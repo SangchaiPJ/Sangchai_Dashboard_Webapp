@@ -829,6 +829,8 @@ def page4():
     st.write('')
     st.write("##### ✅ TC-004 Verify that user can see a history of transaction")
 
+    st.write("""This test case confirms that the logout functionality can work well.""")
+
     st.write("## ⌛ New contents coming soon...")
 
 page_names_to_funcs = {
