@@ -723,12 +723,6 @@ def page4():
 
     row_2_col_1, row_2_col_2 = st.columns(2, gap = "large")
 
-    ### Import XYZ banking web page ###
-    tc001 = open("asset/tc001.png", "rb")
-    contents8 = tc001.read()
-    data_url8 = base64.b64encode(contents8).decode("utf-8")
-    xyz_page.close()
-
     ### Insert the image of XYZ banking web page ###
     with row_2_col_1:
         st.write('')
@@ -756,12 +750,6 @@ def page4():
     st.write("##### ✅ TC-002 Verify that user can deposit money after login")
 
     row_3_col_1, row_3_col_2 = st.columns(2, gap = "large")
-
-    ### Import XYZ banking web page ###
-    tc002 = open("asset/tc002.png", "rb")
-    contents9 = tc002.read()
-    data_url9 = base64.b64encode(contents9).decode("utf-8")
-    xyz_page.close()
 
     ### Insert the image of XYZ banking web page ###
     with row_3_col_1:
@@ -793,12 +781,6 @@ def page4():
     st.write("##### ✅ TC-003 Verify that user can withdraw money")
 
     row_4_col_1, row_4_col_2 = st.columns(2, gap = "large")
-
-    ### Import XYZ banking web page ###
-    tc003 = open("asset/tc003.png", "rb")
-    contents10 = tc003.read()
-    data_url10 = base64.b64encode(contents10).decode("utf-8")
-    xyz_page.close()
 
     ### Insert the image of XYZ banking web page ###
     with row_4_col_1:
@@ -849,6 +831,34 @@ def page4():
 
     st.write("""To confirm that any users can see a history of transactions, the condition to confirm it
     that is when user click "Transactions" button then they can see the start of date time box.""")
+    #############################################################################################
+
+    #############################################################################################
+    st.write('')
+    st.write('')
+    st.write("##### ✅ TC-005 Verify that user can logout")
+
+    row_6_col_1, row_6_col_2 = st.columns(2, gap = "large")
+
+    with row_6_col_1:
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        tc004 = Image.open("asset/tc005.png")
+        st.image(tc004)
+        
+    with row_6_col_2:
+        ### Insert the video of login functional ###    
+        video_file6 = open('asset/tc005.mp4', 'rb')
+        video_bytes6 = video_file6.read()
+        st.write('')
+        st.write('')
+        st.video(video_bytes6)
+
+    st.write("""To confirm that any users can see a history of transactions, the condition to confirm it
+    that is when user click "Transactions" button then they can see the start of date time box.""")
+    #############################################################################################
 
     st.write("## ⌛ New contents coming soon...")
 
