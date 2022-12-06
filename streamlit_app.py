@@ -669,6 +669,10 @@ def page4():
         #     f'</div>',
         #     unsafe_allow_html=True,
         # )
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
         xyz_page = Image.open("asset/XYZ banking web page.png")
         st.image(xyz_page)
         
