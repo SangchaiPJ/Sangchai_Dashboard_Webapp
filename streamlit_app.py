@@ -845,16 +845,18 @@ def page4():
         st.write('')
         st.write('')
         st.write('')
-        tc004 = Image.open("asset/tc005.png")
-        st.image(tc004)
+        st.write('')
+        st.write('')
+        tc005 = Image.open("asset/tc005.png")
+        st.image(tc005)
         
     with row_6_col_2:
         ### Insert the video of login functional ###    
-        video_file6 = open('asset/tc005.mp4', 'rb')
-        video_bytes6 = video_file6.read()
+        video_file7 = open('asset/tc005.mp4', 'rb')
+        video_bytes7 = video_file7.read()
         st.write('')
         st.write('')
-        st.video(video_bytes6)
+        st.video(video_bytes7)
 
     st.write("""This test case confirm that user can use the logout button in order to logout from the system.""")
     #############################################################################################
