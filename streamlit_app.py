@@ -78,7 +78,7 @@ def page1():
 
     ### SOFT SKILLS ###
     st.title('SOFT SKILLS')
-    col11, col22, col33 = st.columns(3)
+    col11, col22 = st.columns(2)
 
     with col11:
         st.write("● Self-motivation\
@@ -861,7 +861,7 @@ def page4():
     st.write("""This test case confirm that user can use the logout button in order to logout from the system.""")
     #############################################################################################
 
-    st.write("#### 🙏 Thank you very much for taking time thorugh my portfolio. In the future, I will\
+    st.write("##### 🙏 Thank you very much for taking time thorugh my portfolio. In the future, I will\
     practice an automation testing skill for a website which has more complexity of UI.")
 
 page_names_to_funcs = {
