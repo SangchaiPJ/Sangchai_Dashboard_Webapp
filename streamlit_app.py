@@ -830,7 +830,7 @@ page_names_to_funcs = {
     "Resume": page1,
     "Thesis (master's studies)": page2,
     "Sales Dashboard": page3,
-    "Automated test (UI testing)": page4,
+    "Automated testing (UI testing)": page4,
 }
 
 selected_page = st.sidebar.selectbox("Choose an option", page_names_to_funcs.keys())
