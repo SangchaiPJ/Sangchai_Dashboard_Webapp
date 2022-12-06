@@ -829,7 +829,27 @@ def page4():
     st.write('')
     st.write("##### ✅ TC-004 Verify that user can see a history of transaction")
 
-    st.write("""This test case confirms that the logout functionality can work well.""")
+    row_5_col_1, row_5_col_2 = st.columns(2, gap = "large")
+
+    with row_5_col_1:
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        tc004 = Image.open("asset/tc004.png")
+        st.image(tc004)
+        
+    with row_5_col_2:
+        ### Insert the video of login functional ###    
+        video_file6 = open('asset/tc004.mp4', 'rb')
+        video_bytes6 = video_file6.read()
+        st.write('')
+        st.write('')
+        st.video(video_bytes6)
+
+    st.write("""To confirm that any users can see a history of transactions, the condition to confirm it
+    that is when user click "Transactions" button then they can see the start of date time box.""")
 
     st.write("## ⌛ New contents coming soon...")
 
